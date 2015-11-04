@@ -108,6 +108,8 @@ span.batchimport-error-caused {
 }
 
 /* NYU theme LMH */
+
+
 /* Red #C50FC3  197 15 60
 Violet #57068C
 Taupe dark #A49483
@@ -123,20 +125,50 @@ background-color:   #B5ADA6 ;
 background-color:   #57068C ;	
 }
 .jumbotron {
-	background-color:  rgba(181, 173, 166, .) ;	
+	background-color:  rgba(181, 173, 166, .3) ;	
 }
 .brand h4 {
 	color: #A49483;	
 }
 .breadcrumb.btn-success {
 	background-color: #B5ADA6;	
+	background-color:white;
+	border:none;
+	box-shadow:none;
 	background-image: none;
+	padding-left: 0;
+	margin: 10px 0 10px;
 }
 ol.breadcrumb li, ol.breadcrumb li a {
-    color: black;
+    color: #A49483;
 	background-color:inherit;
-    font-style: italic;
+    font-style: normal;
+	font-weight:normal;
+	text-shadow:none;
+}
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: ">";
 }
 .homepage ol.breadcrumb  {
 	display:none;	
+}
+.badge {
+	background-color:  rgba(181, 173, 166, .9) ;	
+}
+.panel-primary {
+	border-color:rgba(181, 173, 166, .4) ;	
+}
+.panel-primary >.panel-heading {
+	color: #333;
+	background-image: none;
+	background-color: rgba(181, 173, 166, .3) ;	
+	border: none;
+	border-color: white;	
+}
+.well {
+	background-image: none;
+		background-color:rgba(181, 173, 166, .3) ;	
+	
 }

@@ -1,0 +1,661 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FDA: Search</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="Generator" content="DSpace 5.0-rc3" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	    <link rel="stylesheet" href="static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
+	    <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" type="text/css" />
+	    <link rel="stylesheet" href="static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
+	    <link rel="stylesheet" href="static/css/bootstrap/dspace-theme.css" type="text/css" />
+
+        <link rel="search" type="application/opensearchdescription+xml" href="open-search/description.xml" title="DSpace"/>
+
+        
+	<script type='text/javascript' src="static/js/jquery/jquery-1.10.2.min.js"></script>
+	<script type='text/javascript' src='static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+	<script type='text/javascript' src='static/js/bootstrap/bootstrap.min.js'></script>
+	<script type='text/javascript' src='static/js/holder.js'></script>
+	<script type="text/javascript" src="utils.js"></script>
+    <script type="text/javascript" src="static/js/choice-support.js"> </script>
+
+    
+    
+		<script type="text/javascript">
+	var jQ = jQuery.noConflict();
+	jQ(document).ready(function() {
+		jQ( "#spellCheckQuery").click(function(){
+			jQ("#query").val(jQ(this).attr('data-spell'));
+			jQ("#main-query-submit").click();
+		});
+		jQ( "#filterquery" )
+			.autocomplete({
+				source: function( request, response ) {
+					jQ.ajax({
+						url: "/jspui/json/discovery/autocomplete?query=&filter_field_1=subject&filter_type_1=equals&filter_value_1=Papyrology",
+						dataType: "json",
+						cache: false,
+						data: {
+							auto_idx: jQ("#filtername").val(),
+							auto_query: request.term,
+							auto_sort: 'count',
+							auto_type: jQ("#filtertype").val(),
+							location: ''	
+						},
+						success: function( data ) {
+							response( jQ.map( data.autocomplete, function( item ) {
+								var tmp_val = item.authorityKey;
+								if (tmp_val == null || tmp_val == '')
+								{
+									tmp_val = item.displayedValue;
+								}
+								return {
+									label: item.displayedValue + " (" + item.count + ")",
+									value: tmp_val
+								};
+							}))			
+						}
+					})
+				}
+			});
+	});
+	function validateFilters() {
+		return document.getElementById("filterquery").value.length > 0;
+	}
+</script>
+		
+    
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/jspui/static/js/html5shiv.js"></script>
+  <script src="/jspui/static/js/respond.min.js"></script>
+<![endif]-->
+    </head>
+
+    
+    
+    <body class="undernavigation">
+<a class="sr-only" href="simple-search-filterquery=Papyrology&amp;filtername=subject&amp;filtertype=equals.html#content">Skip navigation</a>
+<header class="navbar navbar-inverse navbar-fixed-top">    
+    
+            <div class="container">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="index.html"><img height="25" src="image/dspace-logo-only.png" alt="DSpace logo" /></a>
+       </div>
+       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+         <ul class="nav navbar-nav">
+           <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                
+           <li class="dropdown">
+             <a href="simple-search-filterquery=Papyrology&amp;filtername=subject&amp;filtertype=equals.html#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li><a href="community-list.html">Communities<br/>&amp;&nbsp;Collections</a></li>
+				<li class="divider"></li>
+        <li class="dropdown-header">Browse Items by:</li>
+				
+				
+				
+				      			<li><a href="browse-type=dateissued.html">Issue Date</a></li>
+					
+				      			<li><a href="browse-type=author.html">Author</a></li>
+					
+				      			<li><a href="browse-type=title.html">Title</a></li>
+					
+				      			<li><a href="browse-type=subject.html">Subject</a></li>
+					
+				    
+				
+
+            </ul>
+          </li>
+          <li class=""><script type="text/javascript">
+<!-- Javascript starts here
+document.write('<a href="#" onClick="var popupwin = window.open(\'/jspui/help/index.html\',\'dspacepopup\',\'height=600,width=550,resizable,scrollbars\');popupwin.focus();return false;">Help<\/a>');
+// -->
+</script><noscript><a href="help/index.html" target="dspacepopup">Help</a></noscript></li>
+       </ul>
+
+ 
+ 
+       <div class="nav navbar-nav navbar-right">
+		<ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+         
+             <a href="simple-search-filterquery=Papyrology&amp;filtername=subject&amp;filtertype=equals.html#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign on to: <b class="caret"></b></a>
+	             
+             <ul class="dropdown-menu">
+               <li><a href="mydspace.html">My DSpace</a></li>
+               <li><a href="subscribe.html">Receive email<br/>updates</a></li>
+               <li><a href="profile.html">Edit Profile</a></li>
+
+		
+             </ul>
+           </li>
+          </ul>
+          
+	
+	<form method="get" action="/jspui/simple-search" class="navbar-form navbar-right">
+	    <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search&nbsp;DSpace" name="query" id="tequery" size="25"/>
+        </div>
+        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+
+	</form></div>
+    </nav>
+
+            </div>
+
+</header>
+
+<main id="content" role="main">
+<div class="container banner">
+	<div class="row">
+		<div class="col-md-9 brand">
+		<h1>DSpace <small>JSPUI</small></h1>
+        <h4>DSpace preserves and enables easy and open access to all types of digital content including text, images, moving images, mpegs and data sets</h4> <a href="http://www.dspace.org" class="btn btn-primary">Learn More</a> 
+        </div>
+        <div class="col-md-3"><img class="pull-right" src="image/logo.gif" alt="DSpace logo" />
+        </div>
+	</div>
+</div>	
+<br/>
+                
+
+<div class="container">
+                
+
+
+
+  
+
+<ol class="breadcrumb btn-success">
+
+  <li><a href="index.html">FDA</a></li>
+
+</ol>
+
+</div>                
+
+
+
+        
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-9">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<h2>Search</h2>
+
+<div class="discovery-search-form panel panel-default">
+    
+	<div class="discovery-query panel-heading">
+    <form action="simple-search" method="get">
+         <label for="tlocation">
+         	Search:
+         </label>
+         <select name="location" id="tlocation">
+
+                                    
+                                    <option selected="selected" value="/">All of DSpace</option>
+
+                                <option value="2451/14814" >
+                                	Arts and Science</option>
+
+                                <option value="2451/14855" >
+                                	College of Dentistry</option>
+
+                                <option value="2451/31735" >
+                                	College of Nursing</option>
+
+                                <option value="2451/14821" >
+                                	Division of Libraries</option>
+
+                                <option value="2451/28471" >
+                                	Gallatin School of Individualized Study</option>
+
+                                <option value="2451/31536" >
+                                	Global Technology Services</option>
+
+                                <option value="2451/25880" >
+                                	Institute for the Study of the Ancient World</option>
+
+                                <option value="2451/29899" >
+                                	Institute of Fine Arts</option>
+
+                                <option value="2451/14950" >
+                                	Law School</option>
+
+                                <option value="2451/28333" >
+                                	NET Institute</option>
+
+                                <option value="2451/28044" >
+                                	NYU School of Medicine</option>
+
+                                <option value="2451/23576" >
+                                	School of Continuing and Professional Studies</option>
+
+                                <option value="2451/23572" >
+                                	School of Social Work</option>
+
+                                <option value="2451/15029" >
+                                	Steinhardt School of Culture, Education, and Human Development</option>
+
+                                <option value="2451/14088" >
+                                	Stern School of Business</option>
+
+                                <option value="2451/14850" >
+                                	Tisch School of the Arts</option>
+                                </select><br/>
+                                <label for="query">for</label>
+                                <input type="text" size="50" id="query" name="query" value=""/>
+                                <input type="submit" id="main-query-submit" class="btn btn-primary" value="Go" />
+                  
+                                <input type="hidden" value="10" name="rpp" />
+                                <input type="hidden" value="score" name="sort_by" />
+                                <input type="hidden" value="desc" name="order" />
+                                
+		<div class="discovery-search-appliedFilters">
+		<span>Current filters:</span>
+		
+			    <select id="filter_field_1" name="filter_field_1">
+				<option value="title">Title</option><option value="author">Author</option><option value="subject" selected="selected">Subject</option><option value="dateIssued">Date Issued</option>
+				</select>
+				<select id="filter_type_1" name="filter_type_1">
+				<option value="equals" selected="selected">Equals</option><option value="contains">Contains</option><option value="authority">ID</option><option value="notequals">Not Equals</option><option value="notcontains">Not Contains</option><option value="notauthority">Not ID</option>
+				</select>
+				<input type="text" id="filter_value_1" name="filter_value_1" value="Papyrology" size="45"/>
+				<input class="btn btn-default" type="submit" id="submit_filter_remove_1" name="submit_filter_remove_1" value="X" />
+				<br/>
+				
+		</div>
+
+<a class="btn btn-default" href="http://msdlib.home.nyu.edu/jspui/simple-search">Start a new search</a>	
+		</form>
+		</div>
+
+		<div class="discovery-search-filters panel-body">
+		<h5>Add filters:</h5>
+		<p class="discovery-search-filters-hint">Use filters to refine the search results.</p>
+		<form action="simple-search" method="get">
+		<input type="hidden" value="" name="location" />
+		<input type="hidden" value="" name="query" />
+		
+				    <input type="hidden" id="filter_field_1" name="filter_field_1" value="subject" />
+					<input type="hidden" id="filter_type_1" name="filter_type_1" value="equals" />
+					<input type="hidden" id="filter_value_1" name="filter_value_1" value="Papyrology" />
+					
+		<select id="filtername" name="filtername">
+		<option value="title">Title</option><option value="author">Author</option><option value="subject">Subject</option><option value="dateIssued">Date Issued</option>
+		</select>
+		<select id="filtertype" name="filtertype">
+		<option value="equals">Equals</option><option value="contains">Contains</option><option value="authority">ID</option><option value="notequals">Not Equals</option><option value="notcontains">Not Contains</option><option value="notauthority">Not ID</option>
+		</select>
+		<input type="text" id="filterquery" name="filterquery" size="45" required="required" />
+		<input type="hidden" value="10" name="rpp" />
+		<input type="hidden" value="score" name="sort_by" />
+		<input type="hidden" value="desc" name="order" />
+		<input class="btn btn-default" type="submit" value="Add" onclick="return validateFilters()" />
+		</form>
+		</div>        
+
+        
+   <div class="discovery-pagination-controls panel-footer">
+   <form action="simple-search" method="get">
+   <input type="hidden" value="" name="location" />
+   <input type="hidden" value="" name="query" />
+	
+				    <input type="hidden" id="filter_field_1" name="filter_field_1" value="subject" />
+					<input type="hidden" id="filter_type_1" name="filter_type_1" value="equals" />
+					<input type="hidden" id="filter_value_1" name="filter_value_1" value="Papyrology" />
+						
+           <label for="rpp">Results/Page</label>
+           <select name="rpp">
+
+                   <option value="5" >5</option>
+
+                   <option value="10" selected="selected">10</option>
+
+                   <option value="15" >15</option>
+
+                   <option value="20" >20</option>
+
+                   <option value="25" >25</option>
+
+                   <option value="30" >30</option>
+
+                   <option value="35" >35</option>
+
+                   <option value="40" >40</option>
+
+                   <option value="45" >45</option>
+
+                   <option value="50" >50</option>
+
+                   <option value="55" >55</option>
+
+                   <option value="60" >60</option>
+
+                   <option value="65" >65</option>
+
+                   <option value="70" >70</option>
+
+                   <option value="75" >75</option>
+
+                   <option value="80" >80</option>
+
+                   <option value="85" >85</option>
+
+                   <option value="90" >90</option>
+
+                   <option value="95" >95</option>
+
+                   <option value="100" >100</option>
+
+           </select>
+           &nbsp;|&nbsp;
+
+               <label for="sort_by">Sort items by</label>
+               <select name="sort_by">
+                   <option value="score">Relevance</option>
+ <option value="dc.title_sort" >Title</option> <option value="dc.date.issued_dt" >Issue Date</option>
+               </select>
+
+           <label for="order">In order</label>
+           <select name="order">
+               <option value="ASC" >Ascending</option>
+               <option value="DESC" selected="selected">Descending</option>
+           </select>
+           <label for="etal">Authors/record</label>
+           <select name="etal">
+
+               <option value="0" selected="selected">All</option>
+<option value="1" >1</option>
+                       <option value="5" >5</option>
+
+                       <option value="10" >10</option>
+
+                       <option value="15" >15</option>
+
+                       <option value="20" >20</option>
+
+                       <option value="25" >25</option>
+
+                       <option value="30" >30</option>
+
+                       <option value="35" >35</option>
+
+                       <option value="40" >40</option>
+
+                       <option value="45" >45</option>
+
+                       <option value="50" >50</option>
+
+           </select>
+           <input class="btn btn-default" type="submit" name="submit_search" value="Update" />
+
+
+</form>
+   </div>
+</div>   
+
+<hr/>
+<div class="discovery-result-pagination row container">
+
+    
+	<div class="alert alert-info">Results 1-10 of 112 (Search time: 0.02 seconds).</div>
+    <ul class="pagination pull-right">
+	<li class="disabled"><span>previous</span></li>
+	
+	<li class="active"><span>1</span></li>
+
+	
+	
+	<li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">2</a></li>
+
+	
+	
+	<li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=20">3</a></li>
+
+	
+	
+	<li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=30">4</a></li>
+
+	<li class="disabled"><span>...</span></li><li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=110">12</a></li><li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">next</a></li>
+	</ul>
+<!-- give a content to the div -->
+</div>
+<div class="discovery-result-results">
+
+
+
+
+
+    <div class="panel panel-info">
+    <div class="panel-heading">Item hits:</div>
+    <table align="center" class="table" summary="This table browses all dspace content">
+<colgroup><col width="130" /><col width="60%" /><col width="40%" /></colgroup>
+<tr>
+<th id="t1" class="oddRowEvenCol">Issue Date</th><th id="t2" class="oddRowOddCol">Title</th><th id="t3" class="oddRowEvenCol">Author(s)</th></tr><tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">1988</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28196">The&#x20;Object&#x20;of&#x20;Reimbursement&#x20;in&#x20;P.Oxy.&#x20;XIV&#x20;1718</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">1991</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28206">Notes&#x20;on&#x20;Egyptian&#x20;Census&#x20;Declarations,&#x20;III</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">1992</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28208">Notes&#x20;on&#x20;Roman&#x20;and&#x20;Byzantine&#x20;Documents</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">1989</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28199">Fourth-Century&#x20;Prices:&#x20;New&#x20;Evidence&#x20;and&#x20;Further&#x20;Thoughts</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">1990</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28202">Five&#x20;Problematic&#x20;Fourth-Century&#x20;Pieces</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">1990</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28201">Notes&#x20;on&#x20;Egyptian&#x20;Census&#x20;Declarations,&#x20;I</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">1989</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28200">Official&#x20;and&#x20;Private&#x20;Violence&#x20;in&#x20;Roman&#x20;Egypt</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">1991</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28205">Notes&#x20;on&#x20;Egyptian&#x20;Census&#x20;Declarations,&#x20;II</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">1991</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28207">The&#x20;Taxes&#x20;of&#x20;Toka</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">1991</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28204">Freedmen&#x20;and&#x20;Freedwomen&#x20;with&#x20;Fathers?</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Bagnall%2C+Roger+S.">Bagnall,&#x20;Roger&#x20;S.</a></em></td></tr>
+</table>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+	</div>
+	<div class="col-md-3">
+                    
+
+
+<h3 class="facets">Discover</h3>
+<div id="facets" class="facetsBox">
+
+<div id="facet_author" class="panel panel-success">
+	    <div class="panel-heading">Author</div>
+	    <ul class="list-group"><li class="list-group-item"><span class="badge">112</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Bagnall%2C+Roger+S.&amp;filtertype=equals"
+                title="Filter by Bagnall, Roger S.">
+                Bagnall, Roger S.</a></li><li class="list-group-item"><span class="badge">28</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Worp%2C+K.+A.&amp;filtertype=equals"
+                title="Filter by Worp, K. A.">
+                Worp, K. A.</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=B%C3%BClow-Jacobsen%2C+A.&amp;filtertype=equals"
+                title="Filter by Bülow-Jacobsen, A.">
+                Bülow-Jacobsen, A.</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Cuvigny%2C+H.&amp;filtertype=equals"
+                title="Filter by Cuvigny, H.">
+                Cuvigny, H.</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Dickey%2C+E.&amp;filtertype=equals"
+                title="Filter by Dickey, E.">
+                Dickey, E.</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Gonis%2C+N.&amp;filtertype=equals"
+                title="Filter by Gonis, N.">
+                Gonis, N.</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Palme%2C+Bernhard&amp;filtertype=equals"
+                title="Filter by Palme, Bernhard">
+                Palme, Bernhard</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Rives%2C+James+B&amp;filtertype=equals"
+                title="Filter by Rives, James B">
+                Rives, James B</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Sheridan%2C+Jennifer+A.&amp;filtertype=equals"
+                title="Filter by Sheridan, Jennifer A.">
+                Sheridan, Jennifer A.</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=author&amp;filterquery=Sijpesteijn%2C+P.+J.&amp;filtertype=equals"
+                title="Filter by Sijpesteijn, P. J.">
+                Sijpesteijn, P. J.</a></li><li class="list-group-item"><span style="visibility: hidden;">.</span>
+	        
+            
+            <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;author_page=1"><span class="pull-right">next ></span></a>
+            </li></ul></div><div id="facet_subject" class="panel panel-success">
+	    <div class="panel-heading">Subject</div>
+	    <ul class="list-group"><li class="list-group-item"><span class="badge">37</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Egypt%2C+late+antiquity&amp;filtertype=equals"
+                title="Filter by Egypt, late antiquity">
+                Egypt, late antiquity</a></li><li class="list-group-item"><span class="badge">28</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Roman+Egypt&amp;filtertype=equals"
+                title="Filter by Roman Egypt">
+                Roman Egypt</a></li><li class="list-group-item"><span class="badge">21</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Byzantine+Egypt&amp;filtertype=equals"
+                title="Filter by Byzantine Egypt">
+                Byzantine Egypt</a></li><li class="list-group-item"><span class="badge">12</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Egypt&amp;filtertype=equals"
+                title="Filter by Egypt">
+                Egypt</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Late+antiquity&amp;filtertype=equals"
+                title="Filter by Late antiquity">
+                Late antiquity</a></li><li class="list-group-item"><span class="badge">2</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Biography&amp;filtertype=equals"
+                title="Filter by Biography">
+                Biography</a></li><li class="list-group-item"><span class="badge">2</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Egypt+Late+Antiquity&amp;filtertype=equals"
+                title="Filter by Egypt Late Antiquity">
+                Egypt Late Antiquity</a></li><li class="list-group-item"><span class="badge">2</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Epigraphy&amp;filtertype=equals"
+                title="Filter by Epigraphy">
+                Epigraphy</a></li><li class="list-group-item"><span class="badge">2</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Methodology&amp;filtertype=equals"
+                title="Filter by Methodology">
+                Methodology</a></li><li class="list-group-item"><span class="badge">1</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=subject&amp;filterquery=Advanced+Papyrological+Information+System+%28APIS%29&amp;filtertype=equals"
+                title="Filter by Advanced Papyrological Information System (APIS)">
+                Advanced Papyrological Informatio...</a></li><li class="list-group-item"><span style="visibility: hidden;">.</span>
+	        
+            
+            <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;subject_page=1"><span class="pull-right">next ></span></a>
+            </li></ul></div><div id="facet_dateIssued" class="panel panel-success">
+	    <div class="panel-heading">Date issued</div>
+	    <ul class="list-group"><li class="list-group-item"><span class="badge">17</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B2000+TO+2007%5D&amp;filtertype=equals"
+                title="Filter by 2000 - 2007">
+                2000 - 2007</a></li><li class="list-group-item"><span class="badge">36</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B1990+TO+1999%5D&amp;filtertype=equals"
+                title="Filter by 1990 - 1999">
+                1990 - 1999</a></li><li class="list-group-item"><span class="badge">35</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B1980+TO+1989%5D&amp;filtertype=equals"
+                title="Filter by 1980 - 1989">
+                1980 - 1989</a></li><li class="list-group-item"><span class="badge">22</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B1970+TO+1979%5D&amp;filtertype=equals"
+                title="Filter by 1970 - 1979">
+                1970 - 1979</a></li><li class="list-group-item"><span class="badge">2</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=subject&amp;filter_type_1=equals&amp;filter_value_1=Papyrology&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B1968+TO+1969%5D&amp;filtertype=equals"
+                title="Filter by 1968 - 1969">
+                1968 - 1969</a></li></ul></div>
+
+</div>
+
+
+    </div>
+    </div>       
+
+</div>
+</main>
+            
+             <footer class="navbar navbar-inverse navbar-bottom">
+             <div id="designedby" class="container text-muted">
+             Theme by <a href="http://www.cineca.it"><img
+                                    src="image/logo-cineca-small.png"
+                                    alt="Logo CINECA" /></a>
+			<div id="footer_feedback" class="pull-right">                                    
+                                <p class="text-muted"><a target="_blank" href="http://www.dspace.org/">DSpace Software</a> Copyright&nbsp;&copy;&nbsp;2002-2013&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-
+                                <a target="_blank" href="feedback.html">Feedback</a>
+                                <a href="htmlmap.html"></a></p>
+                                </div>
+			</div>
+    </footer>
+    </body>
+</html>
+

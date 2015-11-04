@@ -1,0 +1,657 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FDA: Search</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="Generator" content="DSpace 5.0-rc3" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	    <link rel="stylesheet" href="static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
+	    <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" type="text/css" />
+	    <link rel="stylesheet" href="static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
+	    <link rel="stylesheet" href="static/css/bootstrap/dspace-theme.css" type="text/css" />
+
+        <link rel="search" type="application/opensearchdescription+xml" href="open-search/description.xml" title="DSpace"/>
+
+        
+	<script type='text/javascript' src="static/js/jquery/jquery-1.10.2.min.js"></script>
+	<script type='text/javascript' src='static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+	<script type='text/javascript' src='static/js/bootstrap/bootstrap.min.js'></script>
+	<script type='text/javascript' src='static/js/holder.js'></script>
+	<script type="text/javascript" src="utils.js"></script>
+    <script type="text/javascript" src="static/js/choice-support.js"> </script>
+
+    
+    
+		<script type="text/javascript">
+	var jQ = jQuery.noConflict();
+	jQ(document).ready(function() {
+		jQ( "#spellCheckQuery").click(function(){
+			jQ("#query").val(jQ(this).attr('data-spell'));
+			jQ("#main-query-submit").click();
+		});
+		jQ( "#filterquery" )
+			.autocomplete({
+				source: function( request, response ) {
+					jQ.ajax({
+						url: "/jspui/json/discovery/autocomplete?query=&filter_field_1=author&filter_type_1=equals&filter_value_1=Saunders%2C+Anthony",
+						dataType: "json",
+						cache: false,
+						data: {
+							auto_idx: jQ("#filtername").val(),
+							auto_query: request.term,
+							auto_sort: 'count',
+							auto_type: jQ("#filtertype").val(),
+							location: ''	
+						},
+						success: function( data ) {
+							response( jQ.map( data.autocomplete, function( item ) {
+								var tmp_val = item.authorityKey;
+								if (tmp_val == null || tmp_val == '')
+								{
+									tmp_val = item.displayedValue;
+								}
+								return {
+									label: item.displayedValue + " (" + item.count + ")",
+									value: tmp_val
+								};
+							}))			
+						}
+					})
+				}
+			});
+	});
+	function validateFilters() {
+		return document.getElementById("filterquery").value.length > 0;
+	}
+</script>
+		
+    
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/jspui/static/js/html5shiv.js"></script>
+  <script src="/jspui/static/js/respond.min.js"></script>
+<![endif]-->
+    </head>
+
+    
+    
+    <body class="undernavigation">
+<a class="sr-only" href="simple-search-filterquery=Saunders,+Anthony&amp;filtername=author&amp;filtertype=equals.html#content">Skip navigation</a>
+<header class="navbar navbar-inverse navbar-fixed-top">    
+    
+            <div class="container">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="index.html"><img height="25" src="image/dspace-logo-only.png" alt="DSpace logo" /></a>
+       </div>
+       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+         <ul class="nav navbar-nav">
+           <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                
+           <li class="dropdown">
+             <a href="simple-search-filterquery=Saunders,+Anthony&amp;filtername=author&amp;filtertype=equals.html#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li><a href="community-list.html">Communities<br/>&amp;&nbsp;Collections</a></li>
+				<li class="divider"></li>
+        <li class="dropdown-header">Browse Items by:</li>
+				
+				
+				
+				      			<li><a href="browse-type=dateissued.html">Issue Date</a></li>
+					
+				      			<li><a href="browse-type=author.html">Author</a></li>
+					
+				      			<li><a href="browse-type=title.html">Title</a></li>
+					
+				      			<li><a href="browse-type=subject.html">Subject</a></li>
+					
+				    
+				
+
+            </ul>
+          </li>
+          <li class=""><script type="text/javascript">
+<!-- Javascript starts here
+document.write('<a href="#" onClick="var popupwin = window.open(\'/jspui/help/index.html\',\'dspacepopup\',\'height=600,width=550,resizable,scrollbars\');popupwin.focus();return false;">Help<\/a>');
+// -->
+</script><noscript><a href="help/index.html" target="dspacepopup">Help</a></noscript></li>
+       </ul>
+
+ 
+ 
+       <div class="nav navbar-nav navbar-right">
+		<ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+         
+             <a href="simple-search-filterquery=Saunders,+Anthony&amp;filtername=author&amp;filtertype=equals.html#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign on to: <b class="caret"></b></a>
+	             
+             <ul class="dropdown-menu">
+               <li><a href="mydspace.html">My DSpace</a></li>
+               <li><a href="subscribe.html">Receive email<br/>updates</a></li>
+               <li><a href="profile.html">Edit Profile</a></li>
+
+		
+             </ul>
+           </li>
+          </ul>
+          
+	
+	<form method="get" action="/jspui/simple-search" class="navbar-form navbar-right">
+	    <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search&nbsp;DSpace" name="query" id="tequery" size="25"/>
+        </div>
+        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+
+	</form></div>
+    </nav>
+
+            </div>
+
+</header>
+
+<main id="content" role="main">
+<div class="container banner">
+	<div class="row">
+		<div class="col-md-9 brand">
+		<h1>DSpace <small>JSPUI</small></h1>
+        <h4>DSpace preserves and enables easy and open access to all types of digital content including text, images, moving images, mpegs and data sets</h4> <a href="http://www.dspace.org" class="btn btn-primary">Learn More</a> 
+        </div>
+        <div class="col-md-3"><img class="pull-right" src="image/logo.gif" alt="DSpace logo" />
+        </div>
+	</div>
+</div>	
+<br/>
+                
+
+<div class="container">
+                
+
+
+
+  
+
+<ol class="breadcrumb btn-success">
+
+  <li><a href="index.html">FDA</a></li>
+
+</ol>
+
+</div>                
+
+
+
+        
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-9">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<h2>Search</h2>
+
+<div class="discovery-search-form panel panel-default">
+    
+	<div class="discovery-query panel-heading">
+    <form action="simple-search" method="get">
+         <label for="tlocation">
+         	Search:
+         </label>
+         <select name="location" id="tlocation">
+
+                                    
+                                    <option selected="selected" value="/">All of DSpace</option>
+
+                                <option value="2451/14814" >
+                                	Arts and Science</option>
+
+                                <option value="2451/14855" >
+                                	College of Dentistry</option>
+
+                                <option value="2451/31735" >
+                                	College of Nursing</option>
+
+                                <option value="2451/14821" >
+                                	Division of Libraries</option>
+
+                                <option value="2451/28471" >
+                                	Gallatin School of Individualized Study</option>
+
+                                <option value="2451/31536" >
+                                	Global Technology Services</option>
+
+                                <option value="2451/25880" >
+                                	Institute for the Study of the Ancient World</option>
+
+                                <option value="2451/29899" >
+                                	Institute of Fine Arts</option>
+
+                                <option value="2451/14950" >
+                                	Law School</option>
+
+                                <option value="2451/28333" >
+                                	NET Institute</option>
+
+                                <option value="2451/28044" >
+                                	NYU School of Medicine</option>
+
+                                <option value="2451/23576" >
+                                	School of Continuing and Professional Studies</option>
+
+                                <option value="2451/23572" >
+                                	School of Social Work</option>
+
+                                <option value="2451/15029" >
+                                	Steinhardt School of Culture, Education, and Human Development</option>
+
+                                <option value="2451/14088" >
+                                	Stern School of Business</option>
+
+                                <option value="2451/14850" >
+                                	Tisch School of the Arts</option>
+                                </select><br/>
+                                <label for="query">for</label>
+                                <input type="text" size="50" id="query" name="query" value=""/>
+                                <input type="submit" id="main-query-submit" class="btn btn-primary" value="Go" />
+                  
+                                <input type="hidden" value="10" name="rpp" />
+                                <input type="hidden" value="score" name="sort_by" />
+                                <input type="hidden" value="desc" name="order" />
+                                
+		<div class="discovery-search-appliedFilters">
+		<span>Current filters:</span>
+		
+			    <select id="filter_field_1" name="filter_field_1">
+				<option value="title">Title</option><option value="author" selected="selected">Author</option><option value="subject">Subject</option><option value="dateIssued">Date Issued</option>
+				</select>
+				<select id="filter_type_1" name="filter_type_1">
+				<option value="equals" selected="selected">Equals</option><option value="contains">Contains</option><option value="authority">ID</option><option value="notequals">Not Equals</option><option value="notcontains">Not Contains</option><option value="notauthority">Not ID</option>
+				</select>
+				<input type="text" id="filter_value_1" name="filter_value_1" value="Saunders, Anthony" size="45"/>
+				<input class="btn btn-default" type="submit" id="submit_filter_remove_1" name="submit_filter_remove_1" value="X" />
+				<br/>
+				
+		</div>
+
+<a class="btn btn-default" href="http://msdlib.home.nyu.edu/jspui/simple-search">Start a new search</a>	
+		</form>
+		</div>
+
+		<div class="discovery-search-filters panel-body">
+		<h5>Add filters:</h5>
+		<p class="discovery-search-filters-hint">Use filters to refine the search results.</p>
+		<form action="simple-search" method="get">
+		<input type="hidden" value="" name="location" />
+		<input type="hidden" value="" name="query" />
+		
+				    <input type="hidden" id="filter_field_1" name="filter_field_1" value="author" />
+					<input type="hidden" id="filter_type_1" name="filter_type_1" value="equals" />
+					<input type="hidden" id="filter_value_1" name="filter_value_1" value="Saunders, Anthony" />
+					
+		<select id="filtername" name="filtername">
+		<option value="title">Title</option><option value="author">Author</option><option value="subject">Subject</option><option value="dateIssued">Date Issued</option>
+		</select>
+		<select id="filtertype" name="filtertype">
+		<option value="equals">Equals</option><option value="contains">Contains</option><option value="authority">ID</option><option value="notequals">Not Equals</option><option value="notcontains">Not Contains</option><option value="notauthority">Not ID</option>
+		</select>
+		<input type="text" id="filterquery" name="filterquery" size="45" required="required" />
+		<input type="hidden" value="10" name="rpp" />
+		<input type="hidden" value="score" name="sort_by" />
+		<input type="hidden" value="desc" name="order" />
+		<input class="btn btn-default" type="submit" value="Add" onclick="return validateFilters()" />
+		</form>
+		</div>        
+
+        
+   <div class="discovery-pagination-controls panel-footer">
+   <form action="simple-search" method="get">
+   <input type="hidden" value="" name="location" />
+   <input type="hidden" value="" name="query" />
+	
+				    <input type="hidden" id="filter_field_1" name="filter_field_1" value="author" />
+					<input type="hidden" id="filter_type_1" name="filter_type_1" value="equals" />
+					<input type="hidden" id="filter_value_1" name="filter_value_1" value="Saunders, Anthony" />
+						
+           <label for="rpp">Results/Page</label>
+           <select name="rpp">
+
+                   <option value="5" >5</option>
+
+                   <option value="10" selected="selected">10</option>
+
+                   <option value="15" >15</option>
+
+                   <option value="20" >20</option>
+
+                   <option value="25" >25</option>
+
+                   <option value="30" >30</option>
+
+                   <option value="35" >35</option>
+
+                   <option value="40" >40</option>
+
+                   <option value="45" >45</option>
+
+                   <option value="50" >50</option>
+
+                   <option value="55" >55</option>
+
+                   <option value="60" >60</option>
+
+                   <option value="65" >65</option>
+
+                   <option value="70" >70</option>
+
+                   <option value="75" >75</option>
+
+                   <option value="80" >80</option>
+
+                   <option value="85" >85</option>
+
+                   <option value="90" >90</option>
+
+                   <option value="95" >95</option>
+
+                   <option value="100" >100</option>
+
+           </select>
+           &nbsp;|&nbsp;
+
+               <label for="sort_by">Sort items by</label>
+               <select name="sort_by">
+                   <option value="score">Relevance</option>
+ <option value="dc.title_sort" >Title</option> <option value="dc.date.issued_dt" >Issue Date</option>
+               </select>
+
+           <label for="order">In order</label>
+           <select name="order">
+               <option value="ASC" >Ascending</option>
+               <option value="DESC" selected="selected">Descending</option>
+           </select>
+           <label for="etal">Authors/record</label>
+           <select name="etal">
+
+               <option value="0" selected="selected">All</option>
+<option value="1" >1</option>
+                       <option value="5" >5</option>
+
+                       <option value="10" >10</option>
+
+                       <option value="15" >15</option>
+
+                       <option value="20" >20</option>
+
+                       <option value="25" >25</option>
+
+                       <option value="30" >30</option>
+
+                       <option value="35" >35</option>
+
+                       <option value="40" >40</option>
+
+                       <option value="45" >45</option>
+
+                       <option value="50" >50</option>
+
+           </select>
+           <input class="btn btn-default" type="submit" name="submit_search" value="Update" />
+
+
+</form>
+   </div>
+</div>   
+
+<hr/>
+<div class="discovery-result-pagination row container">
+
+    
+	<div class="alert alert-info">Results 1-10 of 72 (Search time: 0.021 seconds).</div>
+    <ul class="pagination pull-right">
+	<li class="disabled"><span>previous</span></li>
+	
+	<li class="active"><span>1</span></li>
+
+	
+	
+	<li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">2</a></li>
+
+	
+	
+	<li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=20">3</a></li>
+
+	
+	
+	<li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=30">4</a></li>
+
+	<li class="disabled"><span>...</span></li><li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=70">8</a></li><li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">next</a></li>
+	</ul>
+<!-- give a content to the div -->
+</div>
+<div class="discovery-result-results">
+
+
+
+
+
+    <div class="panel panel-info">
+    <div class="panel-heading">Item hits:</div>
+    <table align="center" class="table" summary="This table browses all dspace content">
+<colgroup><col width="130" /><col width="60%" /><col width="40%" /></colgroup>
+<tr>
+<th id="t1" class="oddRowEvenCol">Issue Date</th><th id="t2" class="oddRowOddCol">Title</th><th id="t3" class="oddRowEvenCol">Author(s)</th></tr><tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">Oct-1998</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/27087">Price&#x20;Formation&#x20;in&#x20;the&#x20;OTC&#x20;Corporate&#x20;Bond&#x20;Markets:&#x20;A&#x20;Field&#x20;Study&#x20;of&#x20;the&#x20;Inter-Dealer&#x20;Market</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Srinivasan%2C+Anand">Srinivasan,&#x20;Anand</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Walter%2C+Ingo">Walter,&#x20;Ingo</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">8-Nov-1995</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/27106">Credit&#x20;Spreads&#x20;in&#x20;the&#x20;Market&#x20;for&#x20;Highly&#x20;Leveraged&#x20;Transaction&#x20;Loans</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Angbazo%2C+Lazarus">Angbazo,&#x20;Lazarus</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Mei%2C+Jianping">Mei,&#x20;Jianping</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a></em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">Sep-1996</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/26886">Credit&#x20;Risk&#x20;Measurement:&#x20;Developments&#x20;over&#x20;the&#x20;Last&#x20;20&#x20;Years</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Altman%2C+Edward+I.">Altman,&#x20;Edward&#x20;I.</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">Feb-2003</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/27012">Issues&#x20;in&#x20;the&#x20;Credit&#x20;Risk&#x20;Modeling&#x20;of&#x20;Retail&#x20;Markets</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Allen%2C+Linda">Allen,&#x20;Linda</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=DeLong%2C+Gayle">DeLong,&#x20;Gayle</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a></em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">May-1998</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/26966">A&#x20;Theory&#x20;of&#x20;Bank&#x20;Regulation&#x20;and&#x20;Management&#x20;Compensation</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=John%2C+Kose">John,&#x20;Kose</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Senbet%2C+Lemma+W.">Senbet,&#x20;Lemma&#x20;W.</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">Jan-2005</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/26980">The&#x20;Role&#x20;of&#x20;Banks&#x20;in&#x20;Takeovers</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Ivashina%2C+Victoria">Ivashina,&#x20;Victoria</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Nair%2C+Vinay+B.">Nair,&#x20;Vinay&#x20;B.</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Massoud%2C+Nadia+Ziad">Massoud,&#x20;Nadia&#x20;Ziad</a></em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">Sep-1996</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/26995">A&#x20;Theory&#x20;of&#x20;Bank&#x20;Regulation&#x20;and&#x20;Management&#x20;Compensation</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=John%2C+Kose">John,&#x20;Kose</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Senbet%2C+Lemma+W.">Senbet,&#x20;Lemma&#x20;W.</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">1-Jan-2003</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/27008">The&#x20;Long-Run&#x20;Behavior&#x20;of&#x20;Debt&#x20;and&#x20;Equity&#x20;Underwriting&#x20;Spreads</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Kim%2C+Dongcheol">Kim,&#x20;Dongcheol</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Palia%2C+Darius">Palia,&#x20;Darius</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a></em></td></tr>
+<tr><td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">2006</td><td headers="t2" class="evenRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/26092">Innovation&#x20;in&#x20;International&#x20;Law&#x20;and&#x20;Global&#x20;Finance:&#x20;Estimating&#x20;the&#x20;Financial&#x20;Impact&#x20;of&#x20;the&#x20;Cape&#x20;Town&#x20;Convention</a></td><td headers="t3" class="evenRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Walter%2C+Ingo">Walter,&#x20;Ingo</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Srinivasan%2C+Anand">Srinivasan,&#x20;Anand</a></em></td></tr>
+<tr><td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">Feb-2004</td><td headers="t2" class="oddRowOddCol" ><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/26986">Informational&#x20;Efficiency&#x20;Of&#x20;Loans&#x20;Versus&#x20;Bonds:&#x20;Evidence&#x20;From&#x20;Secondary&#x20;Market&#x20;Prices</a></td><td headers="t3" class="oddRowEvenCol" ><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Altman%2C+Edward">Altman,&#x20;Edward</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Gander%2C+Amar">Gander,&#x20;Amar</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Saunders%2C+Anthony">Saunders,&#x20;Anthony</a></em></td></tr>
+</table>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+	</div>
+	<div class="col-md-3">
+                    
+
+
+<h3 class="facets">Discover</h3>
+<div id="facets" class="facetsBox">
+
+<div id="facet_author" class="panel panel-success">
+	    <div class="panel-heading">Author</div>
+	    <ul class="list-group"><li class="list-group-item"><span class="badge">14</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Allen%2C+Linda&amp;filtertype=equals"
+                title="Filter by Allen, Linda">
+                Allen, Linda</a></li><li class="list-group-item"><span class="badge">10</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Srinivasan%2C+Anand&amp;filtertype=equals"
+                title="Filter by Srinivasan, Anand">
+                Srinivasan, Anand</a></li><li class="list-group-item"><span class="badge">6</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Altman%2C+Edward&amp;filtertype=equals"
+                title="Filter by Altman, Edward">
+                Altman, Edward</a></li><li class="list-group-item"><span class="badge">6</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Stover%2C+Roger+D.&amp;filtertype=equals"
+                title="Filter by Stover, Roger D.">
+                Stover, Roger D.</a></li><li class="list-group-item"><span class="badge">5</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Dahiya%2C+Sandeep&amp;filtertype=equals"
+                title="Filter by Dahiya, Sandeep">
+                Dahiya, Sandeep</a></li><li class="list-group-item"><span class="badge">5</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Walter%2C+Ingo&amp;filtertype=equals"
+                title="Filter by Walter, Ingo">
+                Walter, Ingo</a></li><li class="list-group-item"><span class="badge">4</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=John%2C+Kose&amp;filtertype=equals"
+                title="Filter by John, Kose">
+                John, Kose</a></li><li class="list-group-item"><span class="badge">4</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Kim%2C+Dongcheol&amp;filtertype=equals"
+                title="Filter by Kim, Dongcheol">
+                Kim, Dongcheol</a></li><li class="list-group-item"><span class="badge">4</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Massoud%2C+Nadia&amp;filtertype=equals"
+                title="Filter by Massoud, Nadia">
+                Massoud, Nadia</a></li><li class="list-group-item"><span class="badge">4</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=author&amp;filterquery=Palia%2C+Darius&amp;filtertype=equals"
+                title="Filter by Palia, Darius">
+                Palia, Darius</a></li><li class="list-group-item"><span style="visibility: hidden;">.</span>
+	        
+            
+            <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;author_page=1"><span class="pull-right">next ></span></a>
+            </li></ul></div><div id="facet_subject" class="panel panel-success">
+	    <div class="panel-heading">Subject</div>
+	    <ul class="list-group"><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=acquisitions&amp;filtertype=equals"
+                title="Filter by acquisitions">
+                acquisitions</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=bonds&amp;filtertype=equals"
+                title="Filter by bonds">
+                bonds</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=commercial+bank+advisors&amp;filtertype=equals"
+                title="Filter by commercial bank advisors">
+                commercial bank advisors</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=conflict+of+interest+effect&amp;filtertype=equals"
+                title="Filter by conflict of interest effect">
+                conflict of interest effect</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=default&amp;filtertype=equals"
+                title="Filter by default">
+                default</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=event+study&amp;filtertype=equals"
+                title="Filter by event study">
+                event study</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=Financial+Distress&amp;filtertype=equals"
+                title="Filter by Financial Distress">
+                Financial Distress</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=investment+bank+advisors&amp;filtertype=equals"
+                title="Filter by investment bank advisors">
+                investment bank advisors</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=Lending+Relationships&amp;filtertype=equals"
+                title="Filter by Lending Relationships">
+                Lending Relationships</a></li><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=subject&amp;filterquery=loans&amp;filtertype=equals"
+                title="Filter by loans">
+                loans</a></li><li class="list-group-item"><span style="visibility: hidden;">.</span>
+	        
+            
+            <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;subject_page=1"><span class="pull-right">next ></span></a>
+            </li></ul></div><div id="facet_dateIssued" class="panel panel-success">
+	    <div class="panel-heading">Date issued</div>
+	    <ul class="list-group"><li class="list-group-item"><span class="badge">3</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B2010+TO+2012%5D&amp;filtertype=equals"
+                title="Filter by 2010 - 2012">
+                2010 - 2012</a></li><li class="list-group-item"><span class="badge">53</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B2000+TO+2009%5D&amp;filtertype=equals"
+                title="Filter by 2000 - 2009">
+                2000 - 2009</a></li><li class="list-group-item"><span class="badge">16</span> <a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Saunders%2C+Anthony&amp;etal=0&amp;filtername=dateIssued&amp;filterquery=%5B1994+TO+1999%5D&amp;filtertype=equals"
+                title="Filter by 1994 - 1999">
+                1994 - 1999</a></li></ul></div>
+
+</div>
+
+
+    </div>
+    </div>       
+
+</div>
+</main>
+            
+             <footer class="navbar navbar-inverse navbar-bottom">
+             <div id="designedby" class="container text-muted">
+             Theme by <a href="http://www.cineca.it"><img
+                                    src="image/logo-cineca-small.png"
+                                    alt="Logo CINECA" /></a>
+			<div id="footer_feedback" class="pull-right">                                    
+                                <p class="text-muted"><a target="_blank" href="http://www.dspace.org/">DSpace Software</a> Copyright&nbsp;&copy;&nbsp;2002-2013&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-
+                                <a target="_blank" href="feedback.html">Feedback</a>
+                                <a href="htmlmap.html"></a></p>
+                                </div>
+			</div>
+    </footer>
+    </body>
+</html>
+

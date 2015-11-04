@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>FDA</title>
+    <link>http://msdlib.home.nyu.edu:80/jspui</link>
+    <description>The DSpace digital repository system captures, stores, indexes, preserves, and distributes digital research material.</description>
+    <pubDate>Tue, 03 Nov 2015 20:11:42 GMT</pubDate>
+    <dc:date>2015-11-03T20:11:42Z</dc:date>
+    <item>
+      <title>Et cetera</title>
+      <link>http://hdl.handle.net/2451/33883</link>
+      <description>Title: Et cetera
+Authors: Smith, Jane</description>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">http://hdl.handle.net/2451/33883</guid>
+      <dc:date>2015-01-01T00:00:00Z</dc:date>
+    </item>
+    <item>
+      <title>test sub</title>
+      <link>http://hdl.handle.net/2451/33882</link>
+      <description>Title: test sub</description>
+      <pubDate>Mon, 12 Jan 2015 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">http://hdl.handle.net/2451/33882</guid>
+      <dc:date>2015-01-12T00:00:00Z</dc:date>
+    </item>
+    <item>
+      <title>test</title>
+      <link>http://hdl.handle.net/2451/33876</link>
+      <description>Title: test</description>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">http://hdl.handle.net/2451/33876</guid>
+      <dc:date>2012-03-01T00:00:00Z</dc:date>
+    </item>
+    <item>
+      <title>Report on Strategic Initiative to Provide Enhanced Intellectual Access to NYUCurated Digital Collections</title>
+      <link>http://hdl.handle.net/2451/33869</link>
+      <description>Title: Report on Strategic Initiative to Provide Enhanced Intellectual Access to NYUCurated Digital Collections
+Abstract: This report addresses Goal no. 4 of the NYU Division of Libraries’ Strategic Plan&#xD;
+2013-2017, namely, “Establish processes and support structures that ensure we can select,&#xD;
+acquire, preserve, and provide access to the full spectrum of research materials,” and specifically Initiative 4.3, “a plan to provide intellectual access to NYU-curated digital collections via the library's primary discovery-and-access interfaces.” Since the Initiative’s inception in July 2013, participants have identified and&#xD;
+prioritized eligible collections, collected user stories, prototyped the “Ichabod” tool for&#xD;
+metadata aggregation and normalization, mapped metadata elements to a local Nyucore&#xD;
+schema, and harvested the processed metadata into the development instance of BobCat.&#xD;
+&#xD;
+The Ichabod tool is based on Fedora, Hydra, Solr, and Blacklight. It was implemented using Agile methodology and involving developers from DLTS, KADD, and Web Services. The emerging code base, processes, and working relationships place NYU in a strong position to solve local discovery problems as well as innovate in the field of&#xD;
+repository metadata management and enrichment.</description>
+      <pubDate>Wed, 11 Feb 2015 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">http://hdl.handle.net/2451/33869</guid>
+      <dc:date>2015-02-11T00:00:00Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

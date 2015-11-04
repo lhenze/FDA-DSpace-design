@@ -106,3 +106,37 @@ span.batchimport-error-tab {
 span.batchimport-error-caused {
 	font-weight:bold;
 }
+
+/* NYU theme LMH */
+/* Red #C50FC3  197 15 60
+Violet #57068C
+Taupe dark #A49483
+Taupe light B5ADA6   181, 173, 166
+link red #D11255   */
+a:link, a:visited {
+	color: #D11255;
+}
+.navbar-inverse {
+	
+background-image:none;
+background-color:   #B5ADA6 ;	
+background-color:   #57068C ;	
+}
+.jumbotron {
+	background-color:  rgba(181, 173, 166, .) ;	
+}
+.brand h4 {
+	color: #A49483;	
+}
+.breadcrumb.btn-success {
+	background-color: #B5ADA6;	
+	background-image: none;
+}
+ol.breadcrumb li, ol.breadcrumb li a {
+    color: black;
+	background-color:inherit;
+    font-style: italic;
+}
+.homepage ol.breadcrumb  {
+	display:none;	
+}

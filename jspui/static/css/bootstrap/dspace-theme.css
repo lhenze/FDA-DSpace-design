@@ -5,107 +5,197 @@
  *
  * http://www.dspace.org/license/
  */
-.banner img {background-color: #FFFFFF;padding:15px;margin:20px;}
-.brand {padding-top: 30px;}
-.brand h4 {color: #999999}
-ol.breadcrumb li {color: white; font-style: italic;}
-ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
-body.undernavigation {overflow-x: hidden; padding-top: 65px;}
-#content {padding-bottom:60px;}
-#designedby {padding: 5px;}
-#footer_feedback {padding-top: 12px;}
-input[type="file"] {display: block;height: auto;}
-div.panel-primary div.panel-heading a {color: white;}
+
+.banner img {
+  background-color: #FFFFFF;
+  padding: 15px;
+  margin: 20px;
+}
+
+.brand {
+  padding-top: 30px;
+}
+
+.brand h4 {
+  color: #999999
+}
+
+ol.breadcrumb li {
+  color: white;
+  font-style: italic;
+}
+
+ol.breadcrumb li a {
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+}
+
+body.undernavigation {
+  overflow-x: hidden;
+  padding-top: 65px;
+}
+
+#content {
+  padding-bottom: 60px;
+}
+
+#designedby {
+  padding: 5px;
+}
+
+#footer_feedback {
+  padding-top: 12px;
+}
+
+input[type="file"] {
+  display: block;
+  height: auto;
+}
+
+div.panel-primary div.panel-heading a {
+  color: white;
+}
+
+
 /* This magic gets the 16x16 icon to show up.. setting height/width didn't
    do it, but adding padding actually made it show up. */
+
 img.ds-authority-confidence,
-span.ds-authority-confidence
-{ width: 16px; height: 16px; margin: 5px; background-repeat: no-repeat;
-  padding: 0px 2px; vertical-align: bottom; color: transparent;}
+span.ds-authority-confidence {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  padding: 0px 2px;
+  vertical-align: bottom;
+  color: transparent;
+}
+
 img.ds-authority-confidence.cf-unset,
-span.ds-authority-confidence.cf-unset
-  { background-image: url("../../../image/authority/bug.png");}
+span.ds-authority-confidence.cf-unset {
+  background-image: url("../../../image/authority/bug.png");
+}
+
 img.ds-authority-confidence.cf-novalue,
-span.ds-authority-confidence.cf-novalue
-  { background-image: url("../../../image/confidence/0-unauthored.gif");}
+span.ds-authority-confidence.cf-novalue {
+  background-image: url("../../../image/confidence/0-unauthored.gif");
+}
+
 img.ds-authority-confidence.cf-rejected,
 img.ds-authority-confidence.cf-failed,
 span.ds-authority-confidence.cf-rejected,
-span.ds-authority-confidence.cf-failed
-  { background-image: url("../../../image/confidence/2-errortriangle.gif"); }
+span.ds-authority-confidence.cf-failed {
+  background-image: url("../../../image/confidence/2-errortriangle.gif");
+}
+
 img.ds-authority-confidence.cf-notfound,
-span.ds-authority-confidence.cf-notfound
-  { background-image: url("../../../image/confidence/3-thumb1.gif"); }
+span.ds-authority-confidence.cf-notfound {
+  background-image: url("../../../image/confidence/3-thumb1.gif");
+}
+
 img.ds-authority-confidence.cf-ambiguous,
-span.ds-authority-confidence.cf-ambiguous
-  { background-image: url("../../../image/confidence/4-question.gif"); }
+span.ds-authority-confidence.cf-ambiguous {
+  background-image: url("../../../image/confidence/4-question.gif");
+}
+
 img.ds-authority-confidence.cf-uncertain,
-span.ds-authority-confidence.cf-uncertain
-  { background-image: url("../../../image/confidence/5-pinion.gif"); }
+span.ds-authority-confidence.cf-uncertain {
+  background-image: url("../../../image/confidence/5-pinion.gif");
+}
+
 img.ds-authority-confidence.cf-accepted,
-span.ds-authority-confidence.cf-accepted
-  { background-image: url("../../../image/confidence/6-greencheck.gif"); }
+span.ds-authority-confidence.cf-accepted {
+  background-image: url("../../../image/confidence/6-greencheck.gif");
+}
+
 
 /* hide authority-value inputs in forms */
-input.ds-authority-value { display:none; }
+
+input.ds-authority-value {
+  display: none;
+}
+
 
 /** XXX Change to this to get the authority value to show up for debugging:
  input.ds-authority-value { display:inline; }
 **/
 
+
 /* for edit-item-form lock button */
-input.ds-authority-lock
-  { vertical-align: bottom; height: 24px; width: 24px; margin-right: 8px;
-    background-repeat: no-repeat; background-color: transparent; }
-input.ds-authority-lock.is-locked
-  { background-image: url("../../../image/lock24.png"); }
-input.ds-authority-lock.is-unlocked
-  { background-image: url("http://msdlib.home.nyu.edu/jspui/image/unlock24.png"); }
+
+input.ds-authority-lock {
+  vertical-align: bottom;
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+input.ds-authority-lock.is-locked {
+  background-image: url("../../../image/lock24.png");
+}
+
+input.ds-authority-lock.is-unlocked {
+  background-image: url("http://msdlib.home.nyu.edu/jspui/image/unlock24.png");
+}
+
 
 /* field required in submission */
-.label-required:after { content:" *"; }
-.browse_range { text-align: center; }
-.prev-next-links { text-align: center; }
+
+.label-required:after {
+  content: " *";
+}
+
+.browse_range {
+  text-align: center;
+}
+
+.prev-next-links {
+  text-align: center;
+}
 
 div.tagcloud {
-	width:100%;
-	text-align:center
+  width: 100%;
+  text-align: center
 }
 
-div.tagcloud .tagcloud_1{
-	color: rgb(217, 108, 39); 
-	font-weight: normal; 
-	margin-right: 5px;
+div.tagcloud .tagcloud_1 {
+  color: rgb(217, 108, 39);
+  font-weight: normal;
+  margin-right: 5px;
 }
 
-div.tagcloud .tagcloud_2{
-	color: rgb(66, 66, 66); 
-	font-weight: normal; 
-	margin-right: 5px;
+div.tagcloud .tagcloud_2 {
+  color: rgb(66, 66, 66);
+  font-weight: normal;
+  margin-right: 5px;
 }
 
-div.tagcloud .tagcloud_3{
-	color: rgb(129, 129, 131); 
-	font-weight: normal; 
-	margin-right: 5px;
+div.tagcloud .tagcloud_3 {
+  color: rgb(129, 129, 131);
+  font-weight: normal;
+  margin-right: 5px;
 }
 
 div.batchimport-info {
-	color: gray;
+  color: gray;
 }
 
-div.batchimport-info  a {
-	color:#47a447; 
-	font-weight: bold;
+div.batchimport-info a {
+  color: #47a447;
+  font-weight: bold;
 }
 
 span.batchimport-error-tab {
-	padding-left:10px;
+  padding-left: 10px;
 }
 
 span.batchimport-error-caused {
-	font-weight:bold;
+  font-weight: bold;
 }
+
 
 /* NYU theme LMH */
 
@@ -115,60 +205,188 @@ Violet #57068C
 Taupe dark #A49483
 Taupe light B5ADA6   181, 173, 166
 link red #D11255   */
-a:link, a:visited {
-	color: #D11255;
+
+html {
+  font-size: 100%;
 }
+
+a:link,
+a:visited {
+  color: #D11255;
+}
+
 .navbar-inverse {
-	
-background-image:none;
-background-color:   #B5ADA6 ;	
-background-color:   #57068C ;	
+  background-image: none;
+  background-color: #B5ADA6;
+  background-color: #57068C;
 }
+
 .jumbotron {
-	background-color:  rgba(181, 173, 166, .3) ;	
+  background-color: rgba(181, 173, 166, .3);
 }
+
 .brand h4 {
-	color: #A49483;	
+  color: #A49483;
 }
+
 .breadcrumb.btn-success {
-	background-color: #B5ADA6;	
-	background-color:white;
-	border:none;
-	box-shadow:none;
-	background-image: none;
-	padding-left: 0;
-	margin: 10px 0 10px;
+  background-color: #B5ADA6;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  padding-left: 0;
+  margin: 10px 0 10px;
 }
-ol.breadcrumb li, ol.breadcrumb li a {
-    color: #A49483;
-	background-color:inherit;
-    font-style: normal;
-	font-weight:normal;
-	text-shadow:none;
+
+ol.breadcrumb li,
+ol.breadcrumb li a {
+  color: #A49483;
+  background-color: inherit;
+  font-style: normal;
+  font-weight: normal;
+  text-shadow: none;
 }
+
 .breadcrumb>li+li:before {
-    padding: 0 5px;
-    color: #ccc;
-    content: ">";
+  padding: 0 5px;
+  color: #ccc;
+  content: ">";
 }
-.homepage ol.breadcrumb  {
-	display:none;	
+
+.homepage ol.breadcrumb {
+  display: none;
 }
+
 .badge {
-	background-color:  rgba(181, 173, 166, .9) ;	
+  background-color: rgba(181, 173, 166, .9);
 }
+
 .panel-primary {
-	border-color:rgba(181, 173, 166, .4) ;	
+  border-color: rgba(181, 173, 166, .4);
 }
+
 .panel-primary >.panel-heading {
-	color: #333;
-	background-image: none;
-	background-color: rgba(181, 173, 166, .3) ;	
-	border: none;
-	border-color: white;	
+  color: #333;
+  background-image: none;
+  background-color: rgba(181, 173, 166, .4);
+  border: none;
+  border-color: white;
 }
+
 .well {
-	background-image: none;
-		background-color:rgba(181, 173, 166, .3) ;	
-	
+  background-image: none;
+  background-color: rgba(181, 173, 166, .3);
+}
+
+.recently-added .row {
+  /*border: 1px solid blue;*/
+}
+.recently-added.container .col-md-4 {
+	padding-right: 0;
+}
+.recently-added a{
+  color: #666;
+}
+.recently-added article {
+  /*border: 1px solid yellow;*/
+  padding-top: 0;
+}
+
+.recently-added h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: .5em;
+  margin-bottom: .1em;
+}
+
+footer.navbar {
+  margin-bottom: 0;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 10px;
+}
+
+.navbar-form {
+  padding: 0px 0 0 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #A49483;
+  border-color: #8A7D6E
+}
+
+.btn-primary {
+  background-image: -webkit-gradient(linear, left 0, left 100%, from(#A49483), to(#8A7D6E));
+  background-image: -webkit-linear-gradient(top, #A49483, 0%, #8A7D6E, 100%);
+  background-image: -moz-linear-gradient(top, #A49483 0, #8A7D6E 100%);
+  background-image: linear-gradient(to bottom, #A49483 0, #8A7D6E 100%);
+  background-repeat: repeat-x;
+  border-color: #8A7D6E;
+}
+
+.btn-primary:hover {
+  background-image: -webkit-gradient(linear, left 0, left 100%, from(#8A7D6E), to(#A49483));
+  background-image: -webkit-linear-gradient(top, #8A7D6E, 0%, #A49483, 100%);
+  background-image: -moz-linear-gradient(top, #8A7D6E 0, #A49483 100%);
+  background-image: linear-gradient(to bottom, #8A7D6E 0, #A49483 100%);
+  background-repeat: repeat-x;
+  border-color: #8A7D6E;
+}
+
+.homepagesearch h1 {
+  color: #8A7D6E;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.col-md-12 {
+  /*padding: 0;*/
+}
+
+.brand {
+  /*padding-top: 30px;*/
+ /* font-weight: bold;*/
+  font-size: 1rem ;
+ /* color: #A49483;*/
+  max-width: 44em;
+}
+
+.subcommunities {
+  /*background-color: pink;*/
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-bottom a {
+  color: #ddd;
+}
+
+header div.navbar-right {
+  margin-top: 10px;
+}
+.listofcommunities h3 a {
+	color:#333;
+}
+.communityflag {
+  background-color: rgba(181, 173, 166, .2);
+  display: inline-block;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.communityflag a {
+  display: inline-block;
+  color: #A49483;
+  padding: 0 15px;
+}
+
+.communityflag span {
+  display: none;
+}
+
+.homepagesearch {
+  margin-top: 30px;
 }

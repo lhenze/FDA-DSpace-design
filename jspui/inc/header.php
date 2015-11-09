@@ -38,12 +38,7 @@ document.write('<a href="#" onClick="var popupwin = window.open(\'/jspui/help/in
             </ul>
           </li>
         </ul>
-     <!--   <form method="get" action="/jspui/simple-search" class="navbar-form navbar-right">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search&nbsp;DSpace" name="query" id="tequery" size="25"/>
-          </div>
-          <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-        </form> -->
+
       </div>
     </nav>
   </div>

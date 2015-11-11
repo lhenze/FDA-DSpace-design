@@ -26,13 +26,13 @@
 </head>
 
 <body class="undernavigation">
-<a class="sr-only" href="community-list.html#content">Skip navigation</a>
+<a class="sr-only" href="community-list.php#content">Skip navigation</a>
 <?php include "inc/header.php";  ?>
 <main id="content" role="main">
   <?php include "inc/containerbanner.php";  ?>
   <div class="container">
     <ol class="breadcrumb btn-success">
-      <li><a href="index.html">FDA home</a></li>
+      <li><a href="index.php">FDA home</a></li>
       <li>Communities and Collections</li>
       
     </ol>

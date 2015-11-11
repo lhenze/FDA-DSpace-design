@@ -98,11 +98,11 @@
     </div> -->
                 <div class="container row">
                   <div class="col-md-4 listofcommunities">
-                    <h3><a href="community-list.html">Communities</a></h3>
+                    <h3><a href="community-list.php">Communities</a></h3>
                     <div class="list-group">
                       <div class="list-group-item row">
                         <div >
-                          <h4 class="list-group-item-heading"><a href="handle/2451/14814.html">Arts and Science</a> </h4>
+                          <h4 class="list-group-item-heading"><a href="handle/2451/14814.php">Arts and Science</a> </h4>
                           <p></p>
                         </div>
                       </div>

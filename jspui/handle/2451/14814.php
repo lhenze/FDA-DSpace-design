@@ -53,33 +53,12 @@
                     <?php include "../../inc/searchcommunity.php";  ?>
                   </div>
                 </div>
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Browse All By:</div>
-                  <div class="panel-body">
-                    <form method="get" action="/jspui/handle/2451/14814/browse">
-                      <input type="hidden" name="type" value="dateissued" />
-                      <input class="btn btn-default col-md-3" type="submit" name="submit_browse" value="Issue Date" />
-                    </form>
-                    <form method="get" action="/jspui/handle/2451/14814/browse">
-                      <input type="hidden" name="type" value="author" />
-                      <input class="btn btn-default col-md-3" type="submit" name="submit_browse" value="Author" />
-                    </form>
-                    <form method="get" action="/jspui/handle/2451/14814/browse">
-                      <input type="hidden" name="type" value="title" />
-                      <input class="btn btn-default col-md-3" type="submit" name="submit_browse" value="Title" />
-                    </form>
-                    <form method="get" action="/jspui/handle/2451/14814/browse">
-                      <input type="hidden" name="type" value="subject" />
-                      <input class="btn btn-default col-md-3" type="submit" name="submit_browse" value="Subject" />
-                    </form>
-                  </div>
-                </div>
-                <!--  -->
-                <!--   -->
+                
+              
                 <?php include "../../inc/collectionsincommunity.php";  ?>
               </div>
               <div class="col-md-4">
-                <?php include "../../inc/recentlyaddedartsandscience.php";  ?>
+                <?php   include "../../inc/viewstatsforthiscollection.php";  ?>
               </div>
             </div>
           </div>
@@ -131,7 +110,7 @@
             </div>
           </div>
           <div class="row"> </div>
-          <a class="statisticsLink btn btn-info" href="http://msdlib.home.nyu.edu/jspui/handle/2451/14814/statistics"><span class="glyphicon glyphicon-stats"></span></a>
+
         </div>
     </main>
     <?php include "../../inc/footer.php";  ?>

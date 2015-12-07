@@ -30,7 +30,7 @@
     </div>
     <div class="list-group-item ">
       <div class="list-group-item-heading"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/33574"> Gillian Gallagher's collection</a> </div>
-      <p class="collectionDescription">experimental materials</p>
+      <p class="collectionDescription"></p>
     </div>
     <div class="list-group-item ">
       <div class="list-group-item-heading"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/33722"> Heeger Lab Collection</a> </div>

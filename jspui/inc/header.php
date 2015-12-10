@@ -20,15 +20,7 @@
           </li>
           <li class=""><a href="#">Search</a></li>
           </li>
-          <li class=""><script type="text/javascript">
-<!-- Javascript starts here
-document.write('<a href="#" onClick="var popupwin = window.open(\'/jspui/help/index.php\',\'dspacepopup\',\'height=600,width=550,resizable,scrollbars\');popupwin.focus();return false;">Help<\/a>');
-// -->
-</script>
-            <noscript>
-            <a href="help/index.html" target="dspacepopup">Help</a>
-            </noscript>
-          </li>
+        
           <li class="dropdown"> <a href="/ux/fda/index.php#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign on to: <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="/jspui/mydspace.php">My DSpace</a></li>

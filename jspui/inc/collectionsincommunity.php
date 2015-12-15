@@ -1,7 +1,7 @@
 
   <ul>
      <li>
-      <h4><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/28317">Department of Linguistics Field Methods Course</a> </h4>
+      <h4><a href="28317.php">Department of Linguistics Field Methods Course</a> </h4>
       <ul>
         <li>
           <h4><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29947">Field Methods Fall 2011 - Kazakh</a> </h4>

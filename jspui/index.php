@@ -31,17 +31,16 @@
   <script type="text/javascript">
   var jQ = jQuery.noConflict();
   jQ(document).ready(function() {
-      jQ(".fda-tree h4").each(function( index ) {
-        if (jQ( this ).siblings( "ul" ).length ){
-           jQ( this ).addClass("sublist");
-          jQ( this ).nextAll( "ul" ).hide();
+      jQ(".fda-tree li").each(function( index ) {
+        if (jQ( this ).find( "ul" ).length ){
+           jQ( this ).addClass("has-sublist");
+          jQ( this ).find( "ul" ).hide();
           var ArrowElement = jQ( '<a class="arrow" href="#">+</a>');
-          jQ( this ).before( ArrowElement );
+          jQ( this ).prepend( ArrowElement );
           ArrowElement.click(function(event){
             event.preventDefault();
             openstate = jQ(this ).siblings( "ul" ).is(":visible");
             if (!openstate) {
-              
               jQ( this ).text("-");
               jQ( this ).addClass("isOpen");
               jQ( this ).siblings( "ul" ).slideDown("fast", function(){});
@@ -52,7 +51,7 @@
             }
           });
         } else {
-          jQ( this ).addClass("no-sublist");
+          jQ( this ).addClass("has-no-sublist");
         }
     });
   });

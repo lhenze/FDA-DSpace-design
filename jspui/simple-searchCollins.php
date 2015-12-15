@@ -29,18 +29,16 @@
       e.preventDefault();
       openstate = jQ(".discovery-search-filters").is(":visible");
       if (!openstate) {
-         jQ(".discovery-query").addClass("open");
+        jQ(".discovery-query").addClass("open");
         jQ(".discovery-search-filters").slideDown("fast", function() {
           console.log("1 animation done");
-          openstate = true;
-         
+          
         });
       } else {
         jQ(".discovery-query").removeClass("open");
         jQ(".discovery-search-filters").slideUp("fast", function() {
           console.log("2 animation done");
-          openstate = false;
-          
+        
         });
       }
 
@@ -101,7 +99,7 @@
       <?php include "inc/containerbanner.php";  ?>
         <div class="container">
           <ol class="breadcrumb btn-success">
-            <li><a href="index.html">Faculty Digital Archive</a></li>
+            <li><a href="index.php">Faculty Digital Archive</a></li>
           </ol>
         </div>
         <div class="container">

@@ -28,10 +28,39 @@
   <script src="/jspui/static/js/html5shiv.js"></script>
   <script src="/jspui/static/js/respond.min.js"></script>
 <![endif]-->
+  <script type="text/javascript">
+  var jQ = jQuery.noConflict();
+  jQ(document).ready(function() {
+      jQ(".fda-tree h4").each(function( index ) {
+        if (jQ( this ).siblings( "ul" ).length ){
+           jQ( this ).addClass("sublist");
+          jQ( this ).nextAll( "ul" ).hide();
+          var ArrowElement = jQ( '<a class="arrow" href="#">+</a>');
+          jQ( this ).before( ArrowElement );
+          ArrowElement.click(function(event){
+            event.preventDefault();
+            openstate = jQ(this ).siblings( "ul" ).is(":visible");
+            if (!openstate) {
+              
+              jQ( this ).text("-");
+              jQ( this ).addClass("isOpen");
+              jQ( this ).siblings( "ul" ).slideDown("fast", function(){});
+            } else {
+               jQ( this ).removeClass("isOpen");
+              jQ( this ).siblings( "ul" ).slideUp("fast");
+              jQ( this ).text("+");
+            }
+          });
+        } else {
+          jQ( this ).addClass("no-sublist");
+        }
+    });
+  });
+  </script>
 </head>
 
 <body class="undernavigation homepage">
-  <a class="sr-only" href="index.html#content">Skip navigation</a>
+  <a class="sr-only" href="index.php#content">Skip navigation</a>
   <?php include "inc/header.php";  ?>
     <main id="content" role="main">
       <?php include "inc/containerbanner.php";  ?>
@@ -45,6 +74,9 @@
                 Full-time faculty may contribute their research—unpublished and, in many cases, published—in the FDA. Departments, centers, or institutes may use the FDA to distribute their working papers, technical reports, or other research material. <a href="http://www.nyu.edu/its/faculty/fda" class="readmore">Read more...</a></p>
               </div>
               <?php include "inc/simplesearchpanel.php";  ?>
+                <div class="fda-tree">
+                  <?php include "inc/communities.php";  ?>
+                </div>
             </div>
             <div class="col-md-4">
               <div class="panel panel-primary homepagesearch">
@@ -59,115 +91,10 @@
                   </form>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> <!-- end col 4 -->
+          </div> <!-- end col row  -->
         </div>
-        <?php include "inc/breadcrumb.php";  ?>
-          <div class="container">
-            <div class="container row">
-              <div class="col-md-4 listofcommunities">
-                <h3><a href="community-list.php">Communities</a></h3>
-                <div class="list-group">
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/14814.php">Arts and Science</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/14855.html">College of Dentistry</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/31735.html">College of Nursing</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/14821.html">Division of Libraries</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/28471.html">Gallatin School of Individualized Study</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/31536.html">Global Technology Services</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/25880.html">Institute for the Study of the Ancient World</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/29899.html">Institute of Fine Arts</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/14950.html">Law School</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/28333.html">NET Institute</a> </h4>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/28044.html">NYU School of Medicine</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/23576.html">School of Continuing and Professional Studies</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/23572.html">School of Social Work</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/15029.html">Steinhardt School of Culture, Education, and Human Development</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/14088.html">Stern School of Business</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                  <div class="list-group-item row">
-                    <div>
-                      <h4 class="list-group-item-heading"><a href="handle/2451/14850.html">Tisch School of the Arts</a> </h4>
-                      <p></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end container row -->
-          </div>
+        
     </main>
     <?php include "inc/footer.php";  ?>
 </body>

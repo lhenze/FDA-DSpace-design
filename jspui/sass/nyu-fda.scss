@@ -8,7 +8,10 @@ link red #D11255   */
 $violet: #57068C;
 $taupe-dark: #A49483;
 $taupe-light: #B5ADA6;
+$taupe-light-rgb: "181, 173, 166";
 $link-red: #D11255;
+$text-color2: darken(#A49483, 25%);
+$text-color: darken(#A49483, 31%);
 
 @import "partials/_search";
 @import "partials/_tree";
@@ -60,32 +63,24 @@ ol.breadcrumb li a {
 }
 
 .badge {
-  background-color: rgba(181, 173, 166, 0.9);
+  background-color: rgba($taupe-light, 0.9);
 }
 
 .panel-primary {
-  border-color: rgba(181, 173, 166, 0.4);
+  border-color: rgba($taupe-light, 0.4);
 }
 
 .panel-primary > .panel-heading {
   color: #333;
   background-image: none;
-  background-color: rgba(181, 173, 166, 0.4);
-  border: none;
-  border-color: white;
-}
-
-.panel-default > .panel-heading {
-  color: #333;
-  background-image: none;
-  background-color: rgba(181, 173, 166, 0.4);
-  border: none;
-  border-color: white;
+  background-color: rgba($taupe-light, 0.4);
+  // border: none;
+  border-color: $taupe-light;
 }
 
 .well {
   background-image: none;
-  background-color: rgba(181, 173, 166, 0.3);
+  background-color: rgba($taupe-light, 0.3);
 }
 
 .recently-added .row {
@@ -174,10 +169,11 @@ header div.navbar-right {
 
 .listofcommunities h3 a {
   color: #333;
+  background-color: yellow;
 }
 
 .communityflag {
-  background-color: rgba(181, 173, 166, 0.2);
+  background-color: rgba($taupe-light, 0.2);
   display: inline-block;
   margin-top: -15px;
   margin-left: -15px;
@@ -193,6 +189,13 @@ header div.navbar-right {
 
 .homepagesearch {
   margin-top: 30px;
+}
+
+.collections-list {
+  h3 {
+    color: $text-color;
+    margin: 10px 0;
+  }
 }
 
 /*******************/

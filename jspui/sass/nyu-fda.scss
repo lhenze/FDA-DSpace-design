@@ -6,6 +6,7 @@ Taupe dark #A49483
 Taupe light B5ADA6   181, 173, 166
 link red #D11255   */
 $violet: #57068C;
+$violet-dark: #2D0054;
 $taupe-dark: #A49483;
 $taupe-light: #B5ADA6;
 $taupe-light-rgb: "181, 173, 166";
@@ -16,6 +17,7 @@ $text-color: darken(#A49483, 31%);
 @import "partials/_search";
 @import "partials/_tree";
 @import "partials/_collectionpage";
+@import "partials/_topnavbar";
 
 html {
   font-size: 100%;
@@ -24,11 +26,6 @@ html {
 a:link,
 a:visited {
   color: $link-red;
-}
-
-.navbar-inverse {
-  background-image: none;
-  background-color: $violet;
 }
 
 .brand h4 {
@@ -117,10 +114,6 @@ footer.navbar {
   margin-bottom: 10px;
 }
 
-.navbar-form {
-  padding: 0px 0 0 0;
-}
-
 .btn-primary {
   color: #fff;
   background-color: #A49483;
@@ -147,25 +140,12 @@ footer.navbar {
   font-size: 1.1rem;
 }
 
-.col-md-12 {
-  /*padding: 0;*/
-}
-
 .brand {
   /*padding-top: 30px;*/
   /* font-weight: bold;*/
   font-size: 1rem;
   /* color: #A49483;*/
   max-width: 44em;
-}
-
-.navbar-inverse .navbar-nav > li > a,
-.navbar-bottom a {
-  color: #ddd;
-}
-
-header div.navbar-right {
-  margin-top: 10px;
 }
 
 .listofcommunities h3 a {
@@ -236,35 +216,4 @@ header div.navbar-right {
   flex-flow: row nowrap;
   -webkit-justify-content: center;
   justify-content: center;
-}
-
-/*******************/
-@media (min-width: 0em) and (max-width: 991px) {
-  .container > .navbar-header, .container > .navbar-collapse {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  .navbar-collapse {
-    max-height: none;
-  }
-  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background-color: #2D0054;
-  }
-  .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #fff;
-    background-color: #2D0054;
-  }
-  .navbar-header {
-    background: transparent url("/ux/fda/image/nyu_fda_logo_concise.svg") no-repeat 0px center;
-  }
-  .navbar-header img {
-    opacity: 0.0;
-    width: 200px;
-  }
-  .navbar-toggle {
-    margin-top: 15px;
-  }
-  header div.navbar-right {
-    margin-left: 0;
-  }
 }

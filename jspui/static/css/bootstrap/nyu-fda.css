@@ -201,29 +201,105 @@ link red #D11255   */
   color: black;
 }
 
-/* line 20, ../../../sass/nyu-fda.scss */
+/* line 1, ../../../sass/partials/_topnavbar.scss */
+.navbar-form {
+  padding: 0px 0 0 0;
+}
+
+/*******************/
+/* line 6, ../../../sass/partials/_topnavbar.scss */
+.navbar-inverse {
+  background-image: none;
+  background-color: #57068C;
+}
+/* line 9, ../../../sass/partials/_topnavbar.scss */
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-bottom a {
+  color: #ddd;
+}
+@media (max-width: 767px) {
+  /* line 14, ../../../sass/partials/_topnavbar.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu {
+    margin-left: 4em;
+  }
+  /* line 16, ../../../sass/partials/_topnavbar.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px;
+    color: #ddd;
+  }
+  /* line 20, ../../../sass/partials/_topnavbar.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    border-top: 1px solid #2D0054;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* line 28, ../../../sass/partials/_topnavbar.scss */
+header div.navbar-right {
+  margin-top: 10px;
+}
+
+@media (min-width: 0em) and (max-width: 991px) {
+  /* line 33, ../../../sass/partials/_topnavbar.scss */
+  .container > .navbar-header, .container > .navbar-collapse {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* line 37, ../../../sass/partials/_topnavbar.scss */
+  .navbar-collapse {
+    max-height: none;
+  }
+
+  /* line 40, ../../../sass/partials/_topnavbar.scss */
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #2D0054;
+  }
+
+  /* line 43, ../../../sass/partials/_topnavbar.scss */
+  .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #2D0054;
+  }
+
+  /* line 47, ../../../sass/partials/_topnavbar.scss */
+  .navbar-header {
+    background: transparent url("../../../image/nyu_fda_logo_concise.svg") no-repeat 0px center;
+  }
+
+  /* line 50, ../../../sass/partials/_topnavbar.scss */
+  .navbar-header img {
+    opacity: 0.0;
+    width: 200px;
+  }
+
+  /* line 54, ../../../sass/partials/_topnavbar.scss */
+  .navbar-toggle {
+    margin-top: 15px;
+  }
+
+  /* line 57, ../../../sass/partials/_topnavbar.scss */
+  header div.navbar-right {
+    margin-left: 0;
+  }
+}
+/* line 22, ../../../sass/nyu-fda.scss */
 html {
   font-size: 100%;
 }
 
-/* line 24, ../../../sass/nyu-fda.scss */
+/* line 26, ../../../sass/nyu-fda.scss */
 a:link,
 a:visited {
   color: #D11255;
 }
 
-/* line 29, ../../../sass/nyu-fda.scss */
-.navbar-inverse {
-  background-image: none;
-  background-color: #57068C;
-}
-
-/* line 34, ../../../sass/nyu-fda.scss */
+/* line 31, ../../../sass/nyu-fda.scss */
 .brand h4 {
   color: #A49483;
 }
 
-/* line 38, ../../../sass/nyu-fda.scss */
+/* line 35, ../../../sass/nyu-fda.scss */
 .breadcrumb.btn-success {
   background-color: white;
   border: none;
@@ -233,7 +309,7 @@ a:visited {
   margin: 10px 0 10px;
 }
 
-/* line 47, ../../../sass/nyu-fda.scss */
+/* line 44, ../../../sass/nyu-fda.scss */
 ol.breadcrumb li,
 ol.breadcrumb li a {
   color: #A49483;
@@ -243,29 +319,29 @@ ol.breadcrumb li a {
   text-shadow: none;
 }
 
-/* line 56, ../../../sass/nyu-fda.scss */
+/* line 53, ../../../sass/nyu-fda.scss */
 .breadcrumb > li + li:before {
   padding: 0 5px;
   color: #ccc;
   content: ">";
 }
 
-/* line 62, ../../../sass/nyu-fda.scss */
+/* line 59, ../../../sass/nyu-fda.scss */
 .homepage ol.breadcrumb {
   display: none;
 }
 
-/* line 66, ../../../sass/nyu-fda.scss */
+/* line 63, ../../../sass/nyu-fda.scss */
 .badge {
   background-color: rgba(181, 173, 166, 0.9);
 }
 
-/* line 70, ../../../sass/nyu-fda.scss */
+/* line 67, ../../../sass/nyu-fda.scss */
 .panel-primary {
   border-color: rgba(181, 173, 166, 0.4);
 }
 
-/* line 74, ../../../sass/nyu-fda.scss */
+/* line 71, ../../../sass/nyu-fda.scss */
 .panel-primary > .panel-heading {
   color: #333;
   background-image: none;
@@ -273,34 +349,34 @@ ol.breadcrumb li a {
   border-color: #B5ADA6;
 }
 
-/* line 82, ../../../sass/nyu-fda.scss */
+/* line 79, ../../../sass/nyu-fda.scss */
 .well {
   background-image: none;
   background-color: rgba(181, 173, 166, 0.3);
 }
 
-/* line 87, ../../../sass/nyu-fda.scss */
+/* line 84, ../../../sass/nyu-fda.scss */
 .recently-added .row {
   /*border: 1px solid blue;*/
 }
 
-/* line 91, ../../../sass/nyu-fda.scss */
+/* line 88, ../../../sass/nyu-fda.scss */
 .recently-added.container .col-md-4 {
   padding-right: 0;
 }
 
-/* line 95, ../../../sass/nyu-fda.scss */
+/* line 92, ../../../sass/nyu-fda.scss */
 .recently-added a {
   color: #666;
 }
 
-/* line 99, ../../../sass/nyu-fda.scss */
+/* line 96, ../../../sass/nyu-fda.scss */
 .recently-added article {
   /*border: 1px solid yellow;*/
   padding-top: 0;
 }
 
-/* line 104, ../../../sass/nyu-fda.scss */
+/* line 101, ../../../sass/nyu-fda.scss */
 .recently-added h1 {
   font-size: 1rem;
   font-weight: bold;
@@ -309,22 +385,17 @@ ol.breadcrumb li a {
   margin-bottom: .1em;
 }
 
-/* line 112, ../../../sass/nyu-fda.scss */
+/* line 109, ../../../sass/nyu-fda.scss */
 footer.navbar {
   margin-bottom: 0;
 }
 
-/* line 116, ../../../sass/nyu-fda.scss */
+/* line 113, ../../../sass/nyu-fda.scss */
 .list-group-item:last-child {
   margin-bottom: 10px;
 }
 
-/* line 120, ../../../sass/nyu-fda.scss */
-.navbar-form {
-  padding: 0px 0 0 0;
-}
-
-/* line 124, ../../../sass/nyu-fda.scss */
+/* line 117, ../../../sass/nyu-fda.scss */
 .btn-primary {
   color: #fff;
   background-color: #A49483;
@@ -336,7 +407,7 @@ footer.navbar {
   border-color: #8A7D6E;
 }
 
-/* line 135, ../../../sass/nyu-fda.scss */
+/* line 128, ../../../sass/nyu-fda.scss */
 .btn-primary:hover {
   background-image: -webkit-gradient(linear, left 0, left 100%, from(#8A7D6E), to(#A49483));
   background-image: -webkit-linear-gradient(top, #8A7D6E, 0%, #A49483, 100%);
@@ -346,19 +417,14 @@ footer.navbar {
   border-color: #8A7D6E;
 }
 
-/* line 144, ../../../sass/nyu-fda.scss */
+/* line 137, ../../../sass/nyu-fda.scss */
 .homepagesearch h1 {
   color: #8A7D6E;
   margin: 0;
   font-size: 1.1rem;
 }
 
-/* line 150, ../../../sass/nyu-fda.scss */
-.col-md-12 {
-  /*padding: 0;*/
-}
-
-/* line 154, ../../../sass/nyu-fda.scss */
+/* line 143, ../../../sass/nyu-fda.scss */
 .brand {
   /*padding-top: 30px;*/
   /* font-weight: bold;*/
@@ -367,47 +433,36 @@ footer.navbar {
   max-width: 44em;
 }
 
-/* line 162, ../../../sass/nyu-fda.scss */
-.navbar-inverse .navbar-nav > li > a,
-.navbar-bottom a {
-  color: #ddd;
-}
-
-/* line 167, ../../../sass/nyu-fda.scss */
-header div.navbar-right {
-  margin-top: 10px;
-}
-
-/* line 171, ../../../sass/nyu-fda.scss */
+/* line 151, ../../../sass/nyu-fda.scss */
 .listofcommunities h3 a {
   color: #333;
   background-color: yellow;
 }
 
-/* line 176, ../../../sass/nyu-fda.scss */
+/* line 156, ../../../sass/nyu-fda.scss */
 .communityflag {
   background-color: rgba(181, 173, 166, 0.2);
   display: inline-block;
   margin-top: -15px;
   margin-left: -15px;
 }
-/* line 181, ../../../sass/nyu-fda.scss */
+/* line 161, ../../../sass/nyu-fda.scss */
 .communityflag a {
   display: inline-block;
   color: #A49483;
   padding: 0 15px;
 }
-/* line 186, ../../../sass/nyu-fda.scss */
+/* line 166, ../../../sass/nyu-fda.scss */
 .communityflag span {
   display: none;
 }
 
-/* line 191, ../../../sass/nyu-fda.scss */
+/* line 171, ../../../sass/nyu-fda.scss */
 .homepagesearch {
   margin-top: 30px;
 }
 
-/* line 196, ../../../sass/nyu-fda.scss */
+/* line 176, ../../../sass/nyu-fda.scss */
 .collections-list h3 {
   color: #4f453a;
   margin: 10px 0;
@@ -416,23 +471,23 @@ header div.navbar-right {
 /*******************/
 /****  Search Box ******/
 @media (max-width: 991px) {
-  /* line 205, ../../../sass/nyu-fda.scss */
+  /* line 185, ../../../sass/nyu-fda.scss */
   .panel {
     border: none;
     padding: 0;
   }
 
-  /* line 209, ../../../sass/nyu-fda.scss */
+  /* line 189, ../../../sass/nyu-fda.scss */
   .panel-body {
     padding: 0px;
   }
 }
-/* line 215, ../../../sass/nyu-fda.scss */
+/* line 195, ../../../sass/nyu-fda.scss */
 .discovery-pagination-controls .form-group-flex {
   /*background-color: pink;*/
   margin-bottom: 15px;
 }
-/* line 219, ../../../sass/nyu-fda.scss */
+/* line 199, ../../../sass/nyu-fda.scss */
 .discovery-pagination-controls .form-flex-item {
   /*  background-color: red;*/
   -webkit-flex: 1 1 auto;
@@ -446,57 +501,11 @@ header div.navbar-right {
   align-items: center;
 }
 
-/* line 233, ../../../sass/nyu-fda.scss */
+/* line 213, ../../../sass/nyu-fda.scss */
 .form-group-flex {
   display: flex;
   -webkit-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-justify-content: center;
   justify-content: center;
-}
-
-/*******************/
-@media (min-width: 0em) and (max-width: 991px) {
-  /* line 243, ../../../sass/nyu-fda.scss */
-  .container > .navbar-header, .container > .navbar-collapse {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-
-  /* line 247, ../../../sass/nyu-fda.scss */
-  .navbar-collapse {
-    max-height: none;
-  }
-
-  /* line 250, ../../../sass/nyu-fda.scss */
-  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background-color: #2D0054;
-  }
-
-  /* line 253, ../../../sass/nyu-fda.scss */
-  .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #fff;
-    background-color: #2D0054;
-  }
-
-  /* line 257, ../../../sass/nyu-fda.scss */
-  .navbar-header {
-    background: transparent url("/ux/fda/image/nyu_fda_logo_concise.svg") no-repeat 0px center;
-  }
-
-  /* line 260, ../../../sass/nyu-fda.scss */
-  .navbar-header img {
-    opacity: 0.0;
-    width: 200px;
-  }
-
-  /* line 264, ../../../sass/nyu-fda.scss */
-  .navbar-toggle {
-    margin-top: 15px;
-  }
-
-  /* line 267, ../../../sass/nyu-fda.scss */
-  header div.navbar-right {
-    margin-left: 0;
-  }
 }

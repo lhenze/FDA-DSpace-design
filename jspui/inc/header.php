@@ -8,8 +8,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown"> <a href="/jspui/index.php#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="/ux/fda/community-list.php">Communities<br/>
-                &amp;&nbsp;Collections</a></li>
+              <li><a href="/ux/fda/community-list.php">Communities &amp;&nbsp;Collections</a></li>
               <li class="divider"></li>
               <li class="dropdown-header">Browse Items by:</li>
               <li><a href="/ux/fda/browse-type=dateissued.php">Issue Date</a></li>
@@ -24,8 +23,7 @@
           <li class="dropdown"> <a href="/ux/fda/index.php#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign on to: <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="/jspui/mydspace.php">My DSpace</a></li>
-              <li><a href="/jspui/subscribe.php">Receive email<br/>
-                updates</a></li>
+              <li><a href="/jspui/subscribe.php">Receive email updates</a></li>
               <li><a href="/jspui/profile.php">Edit Profile</a></li>
             </ul>
           </li>

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
   <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
-  <link rel="stylesheet" href="static/css/bootstrap/dspace-theme.css" type="text/css" />
+
   <link rel="stylesheet" href="static/css/bootstrap/nyu-fda.css" type="text/css" />
   <link rel="alternate" type="application/rdf+xml" title="Items in FDA" href="feed/rss_1.0/site.rss" />
   <link rel="alternate" type="application/rss+xml" title="Items in FDA" href="feed/rss_2.0/site.rss" />

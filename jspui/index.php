@@ -72,6 +72,7 @@
                 The Faculty Digital Archive (FDA) is a highly visible repository of NYU scholarship, allowing digital works—text, audio, video, data, and more—to be reliably shared and securely stored. Collections may be made freely available worldwide, offered to NYU only, or restricted to a specific group.</p>
                 Full-time faculty may contribute their research—unpublished and, in many cases, published—in the FDA. Departments, centers, or institutes may use the FDA to distribute their working papers, technical reports, or other research material. <a href="http://www.nyu.edu/its/faculty/fda" class="readmore">Read more...</a></p>
               </div>
+                <?php include "inc/carousel.php";  ?>
               <?php include "inc/simplesearchpanel.php";  ?>
                 <div class="fda-tree">
                   <?php include "inc/communities.php";  ?>
@@ -82,12 +83,7 @@
                 <div class="panel-heading">
                   <h1>Right hand nav</h1></div>
                 <div class="panel-body">
-                  <form method="get" action="/jspui/simple-search" class=" navbar-form">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Titles, authors, keywords..." name="query" id="tequery" size="30">
-                    </div>
-                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-                  </form>
+                  sidebar content goes here
                 </div>
               </div>
             </div> <!-- end col 4 -->

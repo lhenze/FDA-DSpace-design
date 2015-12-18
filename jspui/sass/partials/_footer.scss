@@ -1,0 +1,18 @@
+footer.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-top: 1px solid darken($violet, 8%);
+  border-bottom: 1px solid darken($violet, 8%);
+  border-left: none;
+  border-right: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  a {
+    &:link, &:visited {
+      color: #ddd;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+}

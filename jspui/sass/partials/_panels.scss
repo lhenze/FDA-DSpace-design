@@ -1,0 +1,32 @@
+.panel-body {
+  background-color: rgba($taupe-light, 0.1);
+}
+
+.panel-primary {
+  border-color: rgba($taupe-light, 0.4);
+}
+
+.panel-primary > .panel-heading {
+  color: #333;
+  background-image: none;
+  background-color: rgba($taupe-light, 0.4);
+  // border: none;
+  border-color: $taupe-light;
+}
+
+.well {
+  background-image: none;
+  background-color: rgba($taupe-light, 0.3);
+}
+
+/*******************/
+/****  Search Box ******/
+@media (max-width: 991px) {
+  .panel {
+    border: none;
+    padding: 0;
+  }
+  .panel-body {
+    padding: 0px;
+  }
+}

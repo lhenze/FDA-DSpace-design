@@ -1,3 +1,11 @@
+.form-group-flex {
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
 .simplest-search {
   .form-group-flex .input-hold {
     display: block;
@@ -36,6 +44,10 @@
     border-bottom-left-radius: 0px;
     height: 40px;
   }
+}
+
+.simplesearchpanel {
+  max-width: 44em;
 }
 
 .discovery-search-form {
@@ -93,6 +105,25 @@
     display: none;
     width: 100% !important;
     background-color: lighten($taupe-light, 10%);
+  }
+}
+
+.discovery-pagination-controls {
+  .form-group-flex {
+    /*background-color: pink;*/
+    margin-bottom: 15px;
+  }
+  .form-flex-item {
+    /*  background-color: red;*/
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    /*border-right: 1px solid brown;*/
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 

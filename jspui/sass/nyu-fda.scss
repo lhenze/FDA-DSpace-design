@@ -16,8 +16,10 @@ $text-color: darken(#A49483, 31%);
 
 @import "partials/_search";
 @import "partials/_tree";
+@import "partials/_panels";
 @import "partials/_collectionpage";
 @import "partials/_topnavbar";
+@import "partials/_footer";
 
 html {
   font-size: 100%;
@@ -64,23 +66,6 @@ ol.breadcrumb li a {
   background-color: rgba($taupe-light, 0.9);
 }
 
-.panel-primary {
-  border-color: rgba($taupe-light, 0.4);
-}
-
-.panel-primary > .panel-heading {
-  color: #333;
-  background-image: none;
-  background-color: rgba($taupe-light, 0.4);
-  // border: none;
-  border-color: $taupe-light;
-}
-
-.well {
-  background-image: none;
-  background-color: rgba($taupe-light, 0.3);
-}
-
 .recently-added .row {
   /*border: 1px solid blue;*/
 }
@@ -104,10 +89,6 @@ ol.breadcrumb li a {
   line-height: 1.2;
   margin-top: .5em;
   margin-bottom: .1em;
-}
-
-footer.navbar {
-  margin-bottom: 0;
 }
 
 .list-group-item:last-child {
@@ -177,43 +158,4 @@ footer.navbar {
     color: $text-color;
     margin: 10px 0;
   }
-}
-
-/*******************/
-/****  Search Box ******/
-@media (max-width: 991px) {
-  .panel {
-    border: none;
-    padding: 0;
-  }
-  .panel-body {
-    padding: 0px;
-  }
-}
-
-.discovery-pagination-controls {
-  .form-group-flex {
-    /*background-color: pink;*/
-    margin-bottom: 15px;
-  }
-  .form-flex-item {
-    /*  background-color: red;*/
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
-    -webkit-align-content: space-around;
-    -ms-flex-line-pack: distribute;
-    align-content: space-around;
-    /*border-right: 1px solid brown;*/
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-.form-group-flex {
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-justify-content: center;
-  justify-content: center;
 }

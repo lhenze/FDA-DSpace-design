@@ -1,4 +1,4 @@
-<div class="panel panel-primary">
+<div class="panel panel-primary simplesearchpanel">
   <div class="panel-heading">Search:</div>
   <div class="panel-body">
   <form method="get" action="/jspui/simple-search" class="simplest-search">

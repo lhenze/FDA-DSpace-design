@@ -19,7 +19,18 @@ $text-color: darken(#A49483, 31%);
 @import "partials/_panels";
 @import "partials/_collectionpage";
 @import "partials/_topnavbar";
+@import "partials/_breadcrumbs";
 @import "partials/_footer";
+
+// body.undernavigation {
+//   overflow-x: hidden;
+//   padding-top: 65px;
+// }
+
+#content {
+  padding-bottom: 60px;
+  margin-top: 20px;
+}
 
 html {
   font-size: 100%;
@@ -32,34 +43,6 @@ a:visited {
 
 .brand h4 {
   color: $taupe-dark;
-}
-
-.breadcrumb.btn-success {
-  background-color: white;
-  border: none;
-  box-shadow: none;
-  background-image: none;
-  padding-left: 0;
-  margin: 10px 0 10px;
-}
-
-ol.breadcrumb li,
-ol.breadcrumb li a {
-  color: $taupe-dark;
-  background-color: inherit;
-  font-style: normal;
-  font-weight: normal;
-  text-shadow: none;
-}
-
-.breadcrumb > li + li:before {
-  padding: 0 5px;
-  color: #ccc;
-  content: ">";
-}
-
-.homepage ol.breadcrumb {
-  display: none;
 }
 
 .badge {

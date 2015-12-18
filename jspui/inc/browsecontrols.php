@@ -1,4 +1,4 @@
-<div id="browse_controls" class="well text-center">
+<div class="discovery-pagination-controls panel-footer">
   <form method="get" action="/jspui/handle/2451/28317/browse">
     <input type="hidden" name="type" value="title">
     <label for="sort_by">Sort by:</label>

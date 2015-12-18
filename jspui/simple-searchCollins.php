@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
   <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
-  <link rel="stylesheet" href="static/css/bootstrap/dspace-theme.css" type="text/css" />
   <link rel="stylesheet" href="static/css/bootstrap/nyu-fda.css" type="text/css" />
   <link rel="search" type="application/opensearchdescription+xml" href="open-search/description.xml" title="DSpace" />
   <script type='text/javascript' src="static/js/jquery/jquery-1.10.2.min.js"></script>
@@ -19,7 +18,6 @@
   <script type='text/javascript' src='static/js/holder.js'></script>
   <script type="text/javascript" src="utils.js"></script>
   <script type="text/javascript" src="static/js/choice-support.js"></script>
-
   <script type="text/javascript">
   var jQ = jQuery.noConflict();
   jQ(document).ready(function() {
@@ -32,13 +30,13 @@
         jQ(".discovery-query").addClass("open");
         jQ(".discovery-search-filters").slideDown("fast", function() {
           console.log("1 animation done");
-          
+
         });
       } else {
         jQ(".discovery-query").removeClass("open");
         jQ(".discovery-search-filters").slideUp("fast", function() {
           console.log("2 animation done");
-        
+
         });
       }
 

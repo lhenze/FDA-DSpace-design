@@ -45,7 +45,7 @@
               jQ( this ).addClass("isOpen");
               jQ( this ).siblings( "ul" ).slideDown("fast", function(){});
             } else {
-               jQ( this ).removeClass("isOpen");
+              jQ( this ).removeClass("isOpen");
               jQ( this ).siblings( "ul" ).slideUp("fast");
               jQ( this ).text("+");
             }
@@ -58,10 +58,10 @@
   </script>
 </head>
 
-<body class="undernavigation homepage">
+<body class="undernavigation">
   <a class="sr-only" href="index.php#content">Skip navigation</a>
   <?php include "inc/header.php";  ?>
-    <main id="content" role="main">
+    <main id="content" role="main">       
       <?php include "inc/containerbanner.php";  ?>
         <div class="container banner">
           <div class="row">

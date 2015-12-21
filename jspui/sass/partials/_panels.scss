@@ -1,5 +1,11 @@
-.panel-body {
-  background-color: rgba($taupe-light, 0.1);
+.panel {
+  background-color: $taupe-super-light;
+}
+
+.panel h2 {
+  font-size: 1.3rem;
+  margin: 0.5em 0 0 0;
+  color: $taupe-header;
 }
 
 .panel-primary {
@@ -20,7 +26,8 @@
 
 .well {
   background-image: none;
-  background-color: rgba($taupe-light, 0.3);
+  background-color: rgba($taupe-light, 0.1);
+  border-radius: 0;
 }
 
 /*******************/

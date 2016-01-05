@@ -211,7 +211,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="panel">
+          <div class="panel panel-admin-tools">
             <div class="panel-heading">Admin Tools
               <span class="pull-right"><script type="text/javascript">
 <!-- Javascript starts here

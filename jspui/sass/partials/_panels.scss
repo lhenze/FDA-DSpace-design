@@ -24,6 +24,15 @@
   border-color: rgba($taupe-light, 0.5);
 }
 
+.panel-admin-tools {
+  form {
+    margin-bottom: 5px;
+  }
+  form:last-child {
+    margin-bottom: 0px;
+  }
+}
+
 .well {
   background-image: none;
   background-color: rgba($taupe-light, 0.1);

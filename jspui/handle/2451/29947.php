@@ -32,7 +32,6 @@
 <body>
   <a class="sr-only" href="#content">Skip navigation</a>
   <?php include "../../inc/header.php";  ?>
-    </br>
     <div class="container">
       <ol class="breadcrumb btn-success">
         <li><a href="/jspui/">Faculty Digital Archive</a></li>

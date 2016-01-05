@@ -3,7 +3,22 @@
 }
 
 .facet {
-  a:link {
-    color: black;
+  a {
+    padding: 10px 15px;
+    &:link {
+      color: black;
+      display: block;
+    }
+    &:hover {
+      background-color: lighten($taupe-super-light, 1%);
+    }
+    .pull-right {
+      float: none !important;
+      display: block;
+      text-align: right;
+    }
+  }
+  .list-group-item {
+    padding: 0;
   }
 }

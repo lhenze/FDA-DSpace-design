@@ -1,37 +1,21 @@
 .badge {
   background-color: rgba($taupe-light, 0.9);
+  margin: 0;
+  position: relative;
+  float: right;
 }
 
-.recently-added .row {
-  /*border: 1px solid blue;*/
-}
-
-.recently-added.container .col-md-4 {
-  padding-right: 0;
-}
-
-.recently-added a {
-  color: #666;
-}
-
-.recently-added article {
-  /*border: 1px solid yellow;*/
-  padding-top: 0;
-}
-
-.recently-added h1 {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-top: .5em;
-  margin-bottom: .1em;
+.brand {
+  margin-top: 30px;
 }
 
 .homepage-sidebar {
-  // margin-top: 30px;
+  margin-top: 30px;
   .panel-heading h1 {
     text-transform: uppercase;
     font-size: .9rem;
+    margin: 0;
+    color: $taupe-header;
   }
   .authors {
     line-height: 1.25;
@@ -52,7 +36,7 @@
       display: none;
     }
   }
-  h1 {
+  article h1 {
     color: #8A7D6E;
     color: $taupe-header;
     margin: 0;

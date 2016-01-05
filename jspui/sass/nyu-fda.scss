@@ -23,6 +23,7 @@ $taupe-super-light: #F6F5F4;
 @import "partials/_breadcrumbs";
 @import "partials/_mostdownloaded";
 @import "partials/_footer";
+@import "partials/_buttons";
 
 // body.undernavigation {
 //   overflow-x: hidden;
@@ -74,6 +75,10 @@ a:visited {
 .listofcommunities h3 a {
   color: #333;
   background-color: yellow;
+}
+
+.col-md-9 {
+  padding-right: 50px;
 }
 
 .collections-list {

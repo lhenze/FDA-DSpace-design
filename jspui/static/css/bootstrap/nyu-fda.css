@@ -27,7 +27,7 @@ link red #D11255   */
 }
 
 /* line 19, ../../../sass/partials/_panels.scss */
-.panel-primary > .panel-heading {
+.panel-primary > .panel-heading, .panel > .panel-heading {
   color: #333;
   background-image: none;
   background-color: rgba(181, 173, 166, 0.4);
@@ -429,83 +429,62 @@ ol.breadcrumb li a {
 }
 
 /* line 5, ../../../sass/partials/_mostdownloaded.scss */
-.recently-added .row {
-  /*border: 1px solid blue;*/
+.brand {
+  margin-top: 30px;
 }
 
 /* line 9, ../../../sass/partials/_mostdownloaded.scss */
-.recently-added.container .col-md-4 {
-  padding-right: 0;
+.homepage-sidebar {
+  margin-top: 30px;
 }
-
-/* line 13, ../../../sass/partials/_mostdownloaded.scss */
-.recently-added a {
-  color: #666;
-}
-
-/* line 17, ../../../sass/partials/_mostdownloaded.scss */
-.recently-added article {
-  /*border: 1px solid yellow;*/
-  padding-top: 0;
-}
-
-/* line 22, ../../../sass/partials/_mostdownloaded.scss */
-.recently-added h1 {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-top: .5em;
-  margin-bottom: .1em;
-}
-
-/* line 32, ../../../sass/partials/_mostdownloaded.scss */
+/* line 11, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar .panel-heading h1 {
   text-transform: uppercase;
   font-size: .9rem;
 }
-/* line 36, ../../../sass/partials/_mostdownloaded.scss */
+/* line 15, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar .authors {
   line-height: 1.25;
 }
-/* line 39, ../../../sass/partials/_mostdownloaded.scss */
+/* line 18, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar .communityflag {
   display: inline-block;
   margin-top: -15px;
   margin-left: -15px;
   font-size: .8rem;
 }
-/* line 46, ../../../sass/partials/_mostdownloaded.scss */
+/* line 25, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar .communityflag a:link, .homepage-sidebar .communityflag a:visited {
   display: inline-block;
   padding: 0 15px;
 }
-/* line 51, ../../../sass/partials/_mostdownloaded.scss */
+/* line 30, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar .communityflag span {
   display: none;
 }
-/* line 55, ../../../sass/partials/_mostdownloaded.scss */
+/* line 34, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar h1 {
   color: #8A7D6E;
   color: #7e6e5c;
   margin: 0;
   font-size: 1.1rem;
 }
-/* line 61, ../../../sass/partials/_mostdownloaded.scss */
+/* line 40, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar article {
   padding: 10px 0;
   border-bottom: 1px solid #d8d3d0;
   box-shadow: 0px 1px 1px 0px white;
 }
-/* line 66, ../../../sass/partials/_mostdownloaded.scss */
+/* line 45, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar article h1 {
   margin-bottom: .25rem;
 }
-/* line 69, ../../../sass/partials/_mostdownloaded.scss */
+/* line 48, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar article:last-child {
   border-bottom: none;
   box-shadow: none;
 }
-/* line 74, ../../../sass/partials/_mostdownloaded.scss */
+/* line 53, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar a:link, .homepage-sidebar a:visited {
   color: #4f453a;
 }

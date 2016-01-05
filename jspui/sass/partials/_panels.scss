@@ -16,7 +16,7 @@
   background-color: rgba($taupe-light, 0.3);
 }
 
-.panel-primary > .panel-heading {
+.panel-primary > .panel-heading, .panel > .panel-heading {
   color: #333;
   background-image: none;
   background-color: rgba($taupe-light, 0.4);

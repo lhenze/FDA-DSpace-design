@@ -29,7 +29,7 @@
 <![endif]-->
 </head>
 
-<body class="undernavigation">
+<body>
   <a class="sr-only" href="#content">Skip navigation</a>
 <?php include "../../inc/header.php";  ?>
   </br>

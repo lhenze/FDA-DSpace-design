@@ -213,13 +213,7 @@
         <div class="col-md-3">
           <div class="panel panel-admin-tools">
             <div class="panel-heading">Admin Tools
-              <span class="pull-right"><script type="text/javascript">
-<!-- Javascript starts here
-document.write('<a href="#" onClick="var popupwin = window.open(\'/jspui/help/collection-admin.html\',\'dspacepopup\',\'height=600,width=550,resizable,scrollbars\');popupwin.focus();return false;"><span class="glyphicon glyphicon-question-sign"></span>
-              <\/a>'); // -->
-                </script>
-                <noscript><a href="/jspui/help/collection-admin.html" target="dspacepopup"><span class="glyphicon glyphicon-question-sign"></span></a></noscript>
-                </span>
+       
             </div>
             <div class="panel-body">
               <form method="post" action="/jspui/tools/edit-communities">

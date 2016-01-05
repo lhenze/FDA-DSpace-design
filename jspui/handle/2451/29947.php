@@ -6,98 +6,32 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="Generator" content="DSpace 5.0-rc3" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/jspui/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="/jspui/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
-  <link rel="stylesheet" href="/jspui/static/css/bootstrap/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="/jspui/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
-  <link rel="stylesheet" href="/jspui/static/css/bootstrap/dspace-theme.css" type="text/css" />
-  <link rel="alternate" type="application/rdf+xml" title="Items in Collection" href="/jspui/feed/rss_1.0/2451/29947" />
-  <link rel="alternate" type="application/rss+xml" title="Items in Collection" href="/jspui/feed/rss_2.0/2451/29947" />
-  <link rel="alternate" type="application/rss+xml" title="Items in Collection" href="/jspui/feed/atom_1.0/2451/29947" />
-  <link rel="search" type="application/opensearchdescription+xml" href="/jspui/open-search/description.xml" title="DSpace" />
-  <script type='text/javascript' src="/jspui/static/js/jquery/jquery-1.10.2.min.js"></script>
-  <script type='text/javascript' src='/jspui/static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
-  <script type='text/javascript' src='/jspui/static/js/bootstrap/bootstrap.min.js'></script>
-  <script type='text/javascript' src='/jspui/static/js/holder.js'></script>
-  <script type="text/javascript" src="/jspui/utils.js"></script>
-  <script type="text/javascript" src="/jspui/static/js/choice-support.js">
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../../static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../static/css/bootstrap/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../static/css/bootstrap/nyu-fda.css" type="text/css" />
+  <link rel="alternate" type="application/rdf+xml" title="Items in Community" href="http://msdlib.home.nyu.edu/ux/fda/feed/rss_1.0/2451/14814" />
+  <link rel="alternate" type="application/rss+xml" title="Items in Community" href="http://msdlib.home.nyu.edu/ux/fda/feed/rss_2.0/2451/14814" />
+  <link rel="alternate" type="application/rss+xml" title="Items in Community" href="http://msdlib.home.nyu.edu/ux/fda/feed/atom_1.0/2451/14814" />
+  <link rel="search" type="application/opensearchdescription+xml" href="../../open-search/description.xml" title="DSpace" />
+  <script type='text/javascript' src="../../static/js/jquery/jquery-1.10.2.min.js"></script>
+  <script type='text/javascript' src='../../static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+  <script type='text/javascript' src='../../static/js/bootstrap/bootstrap.min.js'></script>
+  <script type='text/javascript' src='../../static/js/holder.js'></script>
+  <script type="text/javascript" src="../../utils.js"></script>
+  <script type="text/javascript" src="../../static/js/choice-support.js">
   </script>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
-  <script src="/jspui/static/js/html5shiv.js"></script>
-  <script src="/jspui/static/js/respond.min.js"></script>
+  <script src="/ux/fda/static/js/html5shiv.js"></script>
+  <script src="/ux/fda/static/js/respond.min.js"></script>
 <![endif]-->
-  </script>
 </head>
 
 <body class="undernavigation">
   <a class="sr-only" href="#content">Skip navigation</a>
-  <header class="navbar navbar-inverse">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="/jspui"><img height="35" width="432" src="/jspui/image/nyu_fda_logo.png" alt="FDA" /> </a>
-      </div>
-      <nav class="collapse navbar-collapse bs-navbar-collapse">
-        <div class="nav navbar-nav navbar-right">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown"> <a href="/jspui/index.php#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="/jspui/community-list">Communities<br/>
-                &amp;&nbsp;Collections</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Browse Items by:</li>
-                <li><a href="/jspui/browse?type=dateissued">Issue Date</a></li>
-                <li><a href="/jspui/browse?type=author">Author</a></li>
-                <li><a href="/jspui/browse?type=title">Title</a></li>
-                <li><a href="/jspui/browse?type=subject">Subject</a></li>
-              </ul>
-            </li>
-            <li class=""><a href="/jspui/advanced-search">Search</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Logged&nbsp;in&nbsp;as laura@test.com <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="/jspui/mydspace">My DSpace</a></li>
-                <li><a href="/jspui/subscribe">Receive email<br/>updates</a></li>
-                <li><a href="/jspui/profile">Edit Profile</a></li>
-                <li class="divider"></li>
-                <li><a href="/jspui/dspace-admin">Administer</a></li>
-                <li><a href="/jspui/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <script type="text/javascript">
-    var jQ = jQuery.noConflict();
-    jQ(document).ready(function() {
-      jQ(".fda-tree li").each(function(index) {
-        if (jQ(this).find("ul").length) {
-          jQ(this).addClass("has-sublist");
-          jQ(this).find("ul").hide();
-          var ArrowElement = jQ('<a class="arrow" href="#">+</a>');
-          jQ(this).prepend(ArrowElement);
-          ArrowElement.click(function(event) {
-            event.preventDefault();
-            openstate = jQ(this).siblings("ul").is(":visible");
-            if (!openstate) {
-              jQ(this).text("-");
-              jQ(this).addClass("isOpen");
-              jQ(this).siblings("ul").slideDown("fast", function() {});
-            } else {
-              jQ(this).removeClass("isOpen");
-              jQ(this).siblings("ul").slideUp("fast");
-              jQ(this).text("+");
-            }
-          });
-        } else {
-          jQ(this).addClass("has-no-sublist");
-        }
-      });
-    });
-    </script>
-  </header>
+<?php include "../../inc/header.php";  ?>
   </br>
   <div class="container">
     <ol class="breadcrumb btn-success">
@@ -390,18 +324,7 @@ document.write('<a href="#" onClick="var popupwin = window.open(\'/jspui/help/co
       </div>
     </div>
   </main>
-  <footer class="navbar navbar-inverse navbar-bottom">
-    <div id="designedby" class="container text-muted">
-      Theme by
-      <a href="http://www.cineca.it"><img src="/jspui/image/logo-cineca-small.png" alt="Logo CINECA" /></a>
-      <div id="footer_feedback" class="pull-right">
-        <p class="text-muted"><a target="_blank" href="http://www.dspace.org/">DSpace Software</a> Copyright&nbsp;&copy;&nbsp;2002-2013&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-
-          <a target="_blank" href="/jspui/feedback">Feedback</a>
-          <a href="/jspui/htmlmap"></a>
-        </p>
-      </div>
-    </div>
-  </footer>
+   <?php include "../../inc/footer.php";  ?>
 </body>
 
 </html>

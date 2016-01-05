@@ -53,10 +53,6 @@
               This collection contains materials on the Kazakh language, spoken in Kazakhstan, northern Soviet Middle Asia into western Siberia. The materials were gathered during the Fall 2011 NYU Field Methods Course, taught by Professor Maria Gouskova. If you are interested in accessing the materials in this database, please contact Maria Gouskova at the Department of Linguistics at NYU.
             </div>
             <p class="copyrightText"></p>
-            <form class="form-group" action="/jspui/submit" method="post">
-              <input type="hidden" name="collection" value="587" />
-              <input class="btn btn-success col-md-12" type="submit" name="submit" value="Submit to This Collection" />
-            </form>
             <form class="well" method="get" action="">
               <small>
                   Subscribe to this collection to receive daily e-mail notification of new additions
@@ -214,6 +210,10 @@
               <div class="panel-heading">Admin Tools
               </div>
               <div class="panel-body">
+                  <form action="/jspui/submit" method="post">
+                  <input type="hidden" name="collection" value="587" />
+                  <input class="btn btn-default col-md-12" type="submit" name="submit" value="Submit Item " />
+                </form>
                 <form method="post" action="/jspui/tools/edit-communities">
                   <input type="hidden" name="collection_id" value="587" />
                   <input type="hidden" name="community_id" value="81" />

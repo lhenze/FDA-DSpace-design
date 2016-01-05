@@ -53,12 +53,7 @@
               This collection contains materials on the Kazakh language, spoken in Kazakhstan, northern Soviet Middle Asia into western Siberia. The materials were gathered during the Fall 2011 NYU Field Methods Course, taught by Professor Maria Gouskova. If you are interested in accessing the materials in this database, please contact Maria Gouskova at the Department of Linguistics at NYU.
             </div>
             <p class="copyrightText"></p>
-            <form class="well" method="get" action="">
-              <small>
-                  Subscribe to this collection to receive daily e-mail notification of new additions
-                </small>
-              <input class="btn btn-sm btn-info" type="submit" name="submit_subscribe" value="Subscribe" />
-            </form>
+         
             <div class="row">
             </div>
             <div class="row">
@@ -210,7 +205,7 @@
               <div class="panel-heading">Admin Tools
               </div>
               <div class="panel-body">
-                  <form action="/jspui/submit" method="post">
+                <form action="/jspui/submit" method="post">
                   <input type="hidden" name="collection" value="587" />
                   <input class="btn btn-default col-md-12" type="submit" name="submit" value="Submit Item " />
                 </form>
@@ -310,6 +305,17 @@
                   2011</a></li>
                   </ul>
                 </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">Subscribe</div>
+              <div class="panel-body">
+                <p> <small>
+                  Subscribe to this collection to receive daily e-mail notification of new additions.
+                </small></p>
+                <form method="get" action="">
+                  <input class="btn btn-primary" type="submit" name="submit_subscribe" value="Subscribe" />
+                </form>
               </div>
             </div>
           </div>

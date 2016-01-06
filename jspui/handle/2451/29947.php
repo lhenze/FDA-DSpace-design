@@ -52,13 +52,7 @@
               <div class="browse_range">
                 Collection&#39;s Items (Sorted by Submit Date in Descending order): 1 to 20 of 71
               </div>
-              <div class="prev-next-links">
-                &nbsp;<a href="/jspui/handle/2451/29947?offset=20">next&nbsp;&gt;</a>
-              </div>
               <?php include "../../inc/collectionitems.php";  ?>
-                <div class="browse_range">
-                  Collection&#39;s Items (Sorted by Submit Date in Descending order): 1 to 20 of 71
-                </div>
                 <div class="prev-next-links">
                   &nbsp;<a href="/jspui/handle/2451/29947?offset=20">next&nbsp;&gt;</a>
                 </div>

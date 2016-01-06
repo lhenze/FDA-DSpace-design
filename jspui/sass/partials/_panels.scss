@@ -10,13 +10,24 @@
 
 .panel-primary {
   border-color: rgba($taupe-light, 0.4);
+  border-radius: 0;
+  border: none;
+  background-color: rgba($taupe-light, 0.2);
+}
+
+.panel-simple-search {
+  border-radius: 0;
+  border: none;
+  background-color: rgba($taupe-light, 0.4);
+  & > .panel-heading {
+    display: none;
+  }
 }
 
 .panel-footer {
   background-color: rgba($taupe-light, 0.3);
 }
 
-.panel-primary > .panel-heading,
 .panel > .panel-heading {
   color: #333;
   background-image: none;

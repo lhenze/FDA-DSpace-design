@@ -15,6 +15,7 @@ $text-color2: darken($taupe-dark, 25%);
 $text-color: darken($taupe-dark, 31%);
 $taupe-super-light: #F6F5F4;
 
+@import "partials/_pagelayout";
 @import "partials/_panels";
 @import "partials/_search";
 @import "partials/_tree";

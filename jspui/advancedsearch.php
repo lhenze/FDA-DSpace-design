@@ -96,7 +96,7 @@
     <main id="content" role="main">
       <?php include "inc/containerbanner.php";  ?>
         <div class="container">
-          <ol class="breadcrumb ">
+          <ol class="breadcrumb btn-success">
             <li><a href="index.php">Faculty Digital Archive</a></li>
           </ol>
         </div>

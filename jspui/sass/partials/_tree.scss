@@ -1,3 +1,7 @@
+.collections-list h3 {
+  border-bottom: 1px solid lighten($taupe-light, 14%);
+}
+
 .fda-tree {
   a {
     display: block;
@@ -20,10 +24,6 @@
     padding-left: 0;
     margin: 0;
   }
-  .sublist {
-    // margin-left: -50px;
- 
-  }
   li {
     clear: left;
   }
@@ -33,12 +33,6 @@
     background-color: lighten($taupe-light, 29%);
     padding-top: 10px;
     padding-bottom: 10px;
-    // .sublist {
-    //   margin-left: -50px;
-    // }
-    // .no-sublist {
-    //   margin-left: 20px;
-    // }
     li {
       margin-left: 20px;
       clear: left;

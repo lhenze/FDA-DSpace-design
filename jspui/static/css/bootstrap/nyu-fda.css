@@ -4,6 +4,47 @@ Violet #57068C
 Taupe dark #A49483
 Taupe light B5ADA6   181, 173, 166
 link red #D11255   */
+/* line 1, ../../../sass/partials/_pagelayout.scss */
+.page-title-area, .search-area {
+  max-width: 45rem;
+}
+
+/* line 5, ../../../sass/partials/_pagelayout.scss */
+.page-title-area {
+  padding-bottom: 3px;
+}
+/* line 7, ../../../sass/partials/_pagelayout.scss */
+.page-title-area h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+}
+
+/* line 14, ../../../sass/partials/_pagelayout.scss */
+.simplesearchpanel {
+  background-color: yellow;
+}
+
+/* line 18, ../../../sass/partials/_pagelayout.scss */
+.collections-list {
+  margin-top: 30px;
+}
+
+/* line 22, ../../../sass/partials/_pagelayout.scss */
+.search-area {
+  padding-bottom: 40px;
+  max-width: 30rem;
+}
+/* line 25, ../../../sass/partials/_pagelayout.scss */
+.search-area .panel-body {
+  padding: 0;
+}
+/* line 28, ../../../sass/partials/_pagelayout.scss */
+.search-area form {
+  box-shadow: 1px 1px 2px rgba(152, 137, 121, 0.46);
+  border-radius: 5px;
+}
+
 /* line 1, ../../../sass/partials/_panels.scss */
 .panel {
   background-color: #F6F5F4;
@@ -21,15 +62,26 @@ link red #D11255   */
   border-color: rgba(181, 173, 166, 0.4);
   border-radius: 0;
   border: none;
-  background-color: rgba(181, 173, 166, 0.4);
+  background-color: rgba(181, 173, 166, 0.2);
 }
 
 /* line 18, ../../../sass/partials/_panels.scss */
+.panel-simple-search {
+  border-radius: 0;
+  border: none;
+  background-color: rgba(181, 173, 166, 0.4);
+}
+/* line 22, ../../../sass/partials/_panels.scss */
+.panel-simple-search > .panel-heading {
+  display: none;
+}
+
+/* line 27, ../../../sass/partials/_panels.scss */
 .panel-footer {
   background-color: rgba(181, 173, 166, 0.3);
 }
 
-/* line 22, ../../../sass/partials/_panels.scss */
+/* line 31, ../../../sass/partials/_panels.scss */
 .panel > .panel-heading {
   color: #333;
   background-image: none;
@@ -42,28 +94,23 @@ link red #D11255   */
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
 }
 
-/* line 35, ../../../sass/partials/_panels.scss */
-.panel-primary > .panel-heading {
-  display: none;
-}
-
-/* line 40, ../../../sass/partials/_panels.scss */
+/* line 45, ../../../sass/partials/_panels.scss */
 .panel-admin-tools form {
   margin-bottom: 5px;
 }
-/* line 43, ../../../sass/partials/_panels.scss */
+/* line 48, ../../../sass/partials/_panels.scss */
 .panel-admin-tools form:last-child {
   margin-bottom: 0px;
 }
 
-/* line 48, ../../../sass/partials/_panels.scss */
+/* line 53, ../../../sass/partials/_panels.scss */
 .well {
   background-image: none;
   background-color: rgba(181, 173, 166, 0.1);
   border-radius: 0;
 }
 
-/* line 54, ../../../sass/partials/_panels.scss */
+/* line 59, ../../../sass/partials/_panels.scss */
 .facetName {
   display: block;
   color: #A49483;
@@ -75,13 +122,13 @@ link red #D11255   */
 }
 
 @media (max-width: 991px) {
-  /* line 66, ../../../sass/partials/_panels.scss */
+  /* line 71, ../../../sass/partials/_panels.scss */
   .panel {
     border: none;
     padding: 0;
   }
 
-  /* line 70, ../../../sass/partials/_panels.scss */
+  /* line 75, ../../../sass/partials/_panels.scss */
   .panel-body {
     padding: 0px;
   }
@@ -253,27 +300,32 @@ link red #D11255   */
   height: 25px;
 }
 
-/* line 2, ../../../sass/partials/_tree.scss */
+/* line 1, ../../../sass/partials/_tree.scss */
+.collections-list h3 {
+  border-bottom: 1px solid #d5d1cd;
+}
+
+/* line 6, ../../../sass/partials/_tree.scss */
 .fda-tree a {
   display: block;
   height: auto;
 }
-/* line 6, ../../../sass/partials/_tree.scss */
+/* line 10, ../../../sass/partials/_tree.scss */
 .fda-tree h2 {
   color: #7e6e5c;
   font-size: 1.3rem;
 }
-/* line 10, ../../../sass/partials/_tree.scss */
+/* line 14, ../../../sass/partials/_tree.scss */
 .fda-tree h4 {
   font-size: 1.2rem;
   margin: 0;
 }
-/* line 13, ../../../sass/partials/_tree.scss */
+/* line 17, ../../../sass/partials/_tree.scss */
 .fda-tree h4 a:link, .fda-tree h4 a:visited {
   color: #4f453a;
   padding: 7px 0;
 }
-/* line 18, ../../../sass/partials/_tree.scss */
+/* line 22, ../../../sass/partials/_tree.scss */
 .fda-tree ul {
   list-style: none;
   padding-left: 0;
@@ -290,21 +342,21 @@ link red #D11255   */
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 42, ../../../sass/partials/_tree.scss */
+/* line 36, ../../../sass/partials/_tree.scss */
 .fda-tree ul > li > ul li {
   margin-left: 20px;
   clear: left;
 }
-/* line 46, ../../../sass/partials/_tree.scss */
+/* line 40, ../../../sass/partials/_tree.scss */
 .fda-tree ul > li > ul > li > ul {
   background-color: #efedec;
 }
-/* line 49, ../../../sass/partials/_tree.scss */
+/* line 43, ../../../sass/partials/_tree.scss */
 .fda-tree ul > li > ul h4 {
   font-size: 1rem;
   font-weight: 400;
 }
-/* line 59, ../../../sass/partials/_tree.scss */
+/* line 53, ../../../sass/partials/_tree.scss */
 .fda-tree a.arrow {
   float: left;
   font-size: 1.3rem;
@@ -315,45 +367,40 @@ link red #D11255   */
   width: 30px;
   color: #ba104b;
 }
-/* line 70, ../../../sass/partials/_tree.scss */
+/* line 64, ../../../sass/partials/_tree.scss */
 .fda-tree a.arrow:hover, .fda-tree a.arrow:active, .fda-tree a.arrow:focus {
   text-decoration: none;
 }
-/* line 73, ../../../sass/partials/_tree.scss */
+/* line 67, ../../../sass/partials/_tree.scss */
 .fda-tree a.arrow:hover {
   color: #ef417e;
 }
 
 /* line 1, ../../../sass/partials/_collectionpage.scss */
-.page-title-area {
-  padding-bottom: 30px;
-}
-
-/* line 5, ../../../sass/partials/_collectionpage.scss */
 .browse_range {
   font-size: 1.1em;
 }
 
-/* line 10, ../../../sass/partials/_collectionpage.scss */
+/* line 6, ../../../sass/partials/_collectionpage.scss */
 .facet a {
   padding: 10px 15px;
 }
-/* line 12, ../../../sass/partials/_collectionpage.scss */
+/* line 8, ../../../sass/partials/_collectionpage.scss */
 .facet a:link, .facet a:visited {
   color: #4f453a;
   display: block;
 }
-/* line 16, ../../../sass/partials/_collectionpage.scss */
+/* line 12, ../../../sass/partials/_collectionpage.scss */
 .facet a:hover {
   background-color: #f8f8f7;
 }
-/* line 19, ../../../sass/partials/_collectionpage.scss */
+/* line 15, ../../../sass/partials/_collectionpage.scss */
 .facet a .pull-right {
   float: none !important;
   display: block;
   text-align: right;
 }
-/* line 25, ../../../sass/partials/_collectionpage.scss */
+/* line 21, ../../../sass/partials/_collectionpage.scss */
 .facet .list-group-item {
   padding: 0;
 }
@@ -447,7 +494,7 @@ header div.navbar-right {
   }
 }
 /* line 1, ../../../sass/partials/_breadcrumbs.scss */
-.breadcrumb.btn-success {
+.breadcrumb {
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -457,8 +504,8 @@ header div.navbar-right {
 }
 
 /* line 10, ../../../sass/partials/_breadcrumbs.scss */
-ol.breadcrumb li,
-ol.breadcrumb li a {
+.breadcrumb li,
+.breadcrumb li a {
   color: #A49483;
   background-color: inherit;
   font-style: normal;
@@ -467,13 +514,23 @@ ol.breadcrumb li a {
 }
 
 /* line 19, ../../../sass/partials/_breadcrumbs.scss */
+ol.breadcrumb li a {
+  box-shadow: inset 0 -1px 0px #d8d3d0;
+}
+/* line 22, ../../../sass/partials/_breadcrumbs.scss */
+ol.breadcrumb li a:hover {
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0px #a69786;
+}
+
+/* line 28, ../../../sass/partials/_breadcrumbs.scss */
 .breadcrumb > li + li:before {
   padding: 0 5px;
-  color: #ccc;
+  color: #ccc7c2;
   content: ">";
 }
 
-/* line 25, ../../../sass/partials/_breadcrumbs.scss */
+/* line 34, ../../../sass/partials/_breadcrumbs.scss */
 .homepage ol.breadcrumb {
   display: none;
 }
@@ -523,28 +580,29 @@ ol.breadcrumb li a {
   display: none;
 }
 /* line 39, ../../../sass/partials/_mostdownloaded.scss */
-.homepage-sidebar article h1 {
-  color: #8A7D6E;
-  color: #7e6e5c;
-  margin: 0;
-  font-size: 1.1rem;
-}
-/* line 45, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar article {
   padding: 10px 0;
   border-bottom: 1px solid #d8d3d0;
   box-shadow: 0px 1px 1px 0px white;
 }
-/* line 50, ../../../sass/partials/_mostdownloaded.scss */
+/* line 44, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar article h1 {
+  color: #8A7D6E;
+  color: #7e6e5c;
+  margin: 0;
+  font-size: 1.1rem;
   margin-bottom: .25rem;
 }
-/* line 53, ../../../sass/partials/_mostdownloaded.scss */
+/* line 51, ../../../sass/partials/_mostdownloaded.scss */
+.homepage-sidebar article:first-child {
+  padding-top: 0;
+}
+/* line 54, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar article:last-child {
   border-bottom: none;
   box-shadow: none;
 }
-/* line 58, ../../../sass/partials/_mostdownloaded.scss */
+/* line 59, ../../../sass/partials/_mostdownloaded.scss */
 .homepage-sidebar a:link, .homepage-sidebar a:visited {
   color: #4f453a;
 }
@@ -616,24 +674,24 @@ footer.navbar a:hover {
   border-color: #adadad;
 }
 
-/* line 33, ../../../sass/nyu-fda.scss */
+/* line 34, ../../../sass/nyu-fda.scss */
 #content {
   padding-bottom: 60px;
   margin-top: 20px;
 }
 
-/* line 38, ../../../sass/nyu-fda.scss */
+/* line 39, ../../../sass/nyu-fda.scss */
 html {
   font-size: 100%;
 }
 
-/* line 42, ../../../sass/nyu-fda.scss */
+/* line 43, ../../../sass/nyu-fda.scss */
 a:link,
 a:visited {
   color: #D11255;
 }
 
-/* line 47, ../../../sass/nyu-fda.scss */
+/* line 48, ../../../sass/nyu-fda.scss */
 .btn-primary {
   color: #fff;
   background-color: #A49483;
@@ -645,7 +703,7 @@ a:visited {
   border-color: #8A7D6E;
 }
 
-/* line 58, ../../../sass/nyu-fda.scss */
+/* line 59, ../../../sass/nyu-fda.scss */
 .btn-primary:hover {
   background-image: -webkit-gradient(linear, left 0, left 100%, from(#8A7D6E), to(#A49483));
   background-image: -webkit-linear-gradient(top, #8A7D6E, 0%, #A49483, 100%);
@@ -655,28 +713,28 @@ a:visited {
   border-color: #8A7D6E;
 }
 
-/* line 67, ../../../sass/nyu-fda.scss */
+/* line 68, ../../../sass/nyu-fda.scss */
 .brand {
   font-size: 1rem;
   max-width: 44em;
 }
-/* line 70, ../../../sass/nyu-fda.scss */
+/* line 71, ../../../sass/nyu-fda.scss */
 .brand h4 {
   color: #A49483;
 }
 
-/* line 75, ../../../sass/nyu-fda.scss */
+/* line 76, ../../../sass/nyu-fda.scss */
 .listofcommunities h3 a {
   color: #333;
   background-color: yellow;
 }
 
-/* line 80, ../../../sass/nyu-fda.scss */
+/* line 81, ../../../sass/nyu-fda.scss */
 .col-md-9 {
   padding-right: 50px;
 }
 
-/* line 85, ../../../sass/nyu-fda.scss */
+/* line 86, ../../../sass/nyu-fda.scss */
 .collections-list h3 {
   color: #4f453a;
   margin: 10px 0;

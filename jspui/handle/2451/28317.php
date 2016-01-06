@@ -34,7 +34,7 @@
   <?php include "../../inc/header.php";  ?>
     <main id="content" role="main">
       <div class="container">
-        <ol class="breadcrumb btn-success">
+        <ol class="breadcrumb">
           <li><a href="/ux/fda/index.php">Faculty Digital Archive</a></li>
           <li><a href="/ux/fda/community-list.php">Communities and Collections</a></li>
           <li><a href="/ux/fda/handle/2451/14814.php">Arts and Science</a></li>
@@ -43,7 +43,7 @@
       </div>
       <div class="container">
         <header class="page-title-area">
-          <h2>Department of Linguistics Field Methods Course <small>Community home page</small></h2>
+          <h2>Department of Linguistics Field Methods Course</h2>
           <p class="collectionDescription">This is thus.</p>
         </header>
         <div class="row">

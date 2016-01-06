@@ -36,19 +36,20 @@
       display: none;
     }
   }
-  article h1 {
-    color: #8A7D6E;
-    color: $taupe-header;
-    margin: 0;
-    font-size: 1.1rem;
-  }
   article {
     // background-color: fuchsia;
     padding: 10px 0;
     border-bottom: 1px solid lighten($taupe-light, 15%);
     box-shadow: 0px 1px 1px 0px white;
     h1 {
+      color: #8A7D6E;
+      color: $taupe-header;
+      margin: 0;
+      font-size: 1.1rem;
       margin-bottom: .25rem;
+    }
+    &:first-child {
+      padding-top: 0;
     }
     &:last-child {
       border-bottom: none;

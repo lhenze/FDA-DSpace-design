@@ -61,33 +61,32 @@
   <a class="sr-only" href="14814.html#content">Skip navigation</a>
   <?php include "../../inc/header.php";  ?>
     <main id="content" role="main">
-      <?php include "../../inc/containerbanner.php";  ?>
-        <div class="container">
-          <ol class="breadcrumb btn-success">
-            <li><a href="../../index.php">Faculty Digital Archive</a></li>
-            <li><a href="../../community-list.php">Communities and Collections</a></li>
-            <li>Arts and Science</li>
-          </ol>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="page-title-area">
-                <h2>Arts and Science <small>Community home page</small>  </h2>
-              </div>
-              <?php include "../../inc/searchcommunity.php";  ?>
-                <section class="collections-list">
-                  <h3>Collections and sub-communities</h3>
-                  <div class="fda-tree">
-                    <?php include "../../inc/collectionsincommunity.php";  ?>
-                  </div>
-                </section>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../../index.php">Faculty Digital Archive</a></li>
+          <li><a href="../../community-list.php">Communities and Collections</a></li>
+          <li>Arts and Science</li>
+        </ol>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="page-title-area">
+              <h2>Arts and Science  </h2>
             </div>
-            <div class="col-md-4">
-              &nbsp;
-            </div>
+            <?php include "../../inc/searchcommunity.php";  ?>
+              <section class="collections-list">
+                <h3>Collections and sub-communities</h3>
+                <div class="fda-tree">
+                  <?php include "../../inc/collectionsincommunity.php";  ?>
+                </div>
+              </section>
+          </div>
+          <div class="col-md-4">
+          <!--   sidebar -->
           </div>
         </div>
+      </div>
     </main>
     <?php include "../../inc/footer.php";  ?>
 </body>

@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
   <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
-
   <link rel="stylesheet" href="static/css/bootstrap/nyu-fda.css" type="text/css" />
   <link rel="alternate" type="application/rdf+xml" title="Items in FDA" href="feed/rss_1.0/site.rss" />
   <link rel="alternate" type="application/rss+xml" title="Items in FDA" href="feed/rss_2.0/site.rss" />
@@ -31,28 +30,25 @@
   <script type="text/javascript">
   var jQ = jQuery.noConflict();
   jQ(document).ready(function() {
-      jQ(".fda-tree li").each(function( index ) {
-        if (jQ( this ).find( "ul" ).length ){
-           jQ( this ).addClass("has-sublist");
-          jQ( this ).find( "ul" ).hide();
-          var ArrowElement = jQ( '<a class="arrow" href="#">+</a>');
-          jQ( this ).prepend( ArrowElement );
-          ArrowElement.click(function(event){
-            event.preventDefault();
-            openstate = jQ(this ).siblings( "ul" ).is(":visible");
-            if (!openstate) {
-              jQ( this ).text("-");
-              jQ( this ).addClass("isOpen");
-              jQ( this ).siblings( "ul" ).slideDown("fast", function(){});
-            } else {
-              jQ( this ).removeClass("isOpen");
-              jQ( this ).siblings( "ul" ).slideUp("fast");
-              jQ( this ).text("+");
-            }
-          });
-        } else {
-          jQ( this ).addClass("has-no-sublist");
-        }
+    jQ(".fda-tree li").each(function(index) {
+      if (jQ(this).find("ul").length) {
+        jQ(this).find("ul").hide();
+        var ArrowElement = jQ('<a class="arrow" href="#">+</a>');
+        jQ(this).prepend(ArrowElement);
+        ArrowElement.click(function(event) {
+          event.preventDefault();
+          openstate = jQ(this).siblings("ul").is(":visible");
+          if (!openstate) {
+            jQ(this).text("-");
+            jQ(this).addClass("isOpen");
+            jQ(this).siblings("ul").slideDown("fast", function() {});
+          } else {
+            jQ(this).removeClass("isOpen");
+            jQ(this).siblings("ul").slideUp("fast");
+            jQ(this).text("+");
+          }
+        });
+      }
     });
   });
   </script>
@@ -61,7 +57,7 @@
 <body class="undernavigation">
   <a class="sr-only" href="index.php#content">Skip navigation</a>
   <?php include "inc/header.php";  ?>
-    <main id="content" role="main">       
+    <main id="content" role="main">
       <?php include "inc/containerbanner.php";  ?>
         <div class="container banner">
           <div class="row">
@@ -70,26 +66,26 @@
                 <!-- <h3>Faculty Digital Archive</h3> -->
                 <!--   <p><strong>What is the Faculty Digital Archive (FDA)?</strong><br />-->
                 The Faculty Digital Archive (FDA) is a highly visible repository of NYU scholarship, allowing digital works—text, audio, video, data, and more—to be reliably shared and securely stored. Collections may be made freely available worldwide, offered to NYU only, or restricted to a specific group.</p>
-                Full-time faculty may contribute their research—unpublished and, in many cases, published—in the FDA. Departments, centers, or institutes may use the FDA to distribute their working papers, technical reports, or other research material. <a href="http://www.nyu.edu/its/faculty/fda" class="readmore">Read more...</a></p>
+                Full-time faculty may contribute their research—unpublished and, in many cases, published—in the FDA. Departments, centers, or institutes may use the FDA to distribute their working papers, technical reports, or other research material. <a href="http://www.nyu.edu/its/faculty/fda" class="readmore">Read&nbsp;more...</a></p>
               </div>
-                <?php include "inc/carousel.php";  ?>
               <?php include "inc/simplesearchpanel.php";  ?>
-                <div class="fda-tree">
+                <div class="fda-tree ">
+                  <h2>Browse Communities</h2>
                   <?php include "inc/communities.php";  ?>
                 </div>
             </div>
             <div class="col-md-4">
-              <div class="panel panel-primary homepagesearch">
-                <div class="panel-heading">
-                  <h1>Right hand nav</h1></div>
+              <div class="panel panel-primary homepage-sidebar">
+                <div class="panel-heading"><h1>Most downloaded</h1></div>
                 <div class="panel-body">
-                  sidebar content goes here
+                  <?php include "inc/mostdownloaded.php";  ?>
                 </div>
               </div>
-            </div> <!-- end col 4 -->
-          </div> <!-- end col row  -->
+            </div>
+            <!-- end col 4 -->
+          </div>
+          <!-- end col row  -->
         </div>
-        
     </main>
     <?php include "inc/footer.php";  ?>
 </body>

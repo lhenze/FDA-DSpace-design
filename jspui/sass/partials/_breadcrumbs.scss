@@ -1,4 +1,4 @@
-.breadcrumb.btn-success {
+.breadcrumb {
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -7,8 +7,8 @@
   margin: 0px 0 10px;
 }
 
-ol.breadcrumb li,
-ol.breadcrumb li a {
+.breadcrumb li,
+.breadcrumb li a {
   color: $taupe-dark;
   background-color: inherit;
   font-style: normal;
@@ -16,9 +16,18 @@ ol.breadcrumb li a {
   text-shadow: none;
 }
 
+ol.breadcrumb li a {
+  // border-bottom: 1px solid lighten($taupe-light, 2%);
+  box-shadow: inset 0 -1px 0px lighten($taupe-light, 15%);
+  &:hover {
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0px lighten($taupe-dark, 1%);
+  }
+}
+
 .breadcrumb > li + li:before {
   padding: 0 5px;
-  color: #ccc;
+  color: lighten($taupe-light, 10%);
   content: ">";
 }
 

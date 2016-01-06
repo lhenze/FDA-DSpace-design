@@ -43,15 +43,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-9">
-            <div class="container">
+            <header>
               <div class="row">
                 <div class="col-md-8">
-                  <h2>Field Methods Fall 2011 - Kazakh
-    <small>Collection home page</small>
-      </h2></div>
+                  <h2>Field Methods Fall 2011 - Kazakh</h2></div>
               </div>
               This collection contains materials on the Kazakh language, spoken in Kazakhstan, northern Soviet Middle Asia into western Siberia. The materials were gathered during the Fall 2011 NYU Field Methods Course, taught by Professor Maria Gouskova. If you are interested in accessing the materials in this database, please contact Maria Gouskova at the Department of Linguistics at NYU.
-            </div>
+            </header>
             <p class="copyrightText"></p>
             <div class="row">
             </div>

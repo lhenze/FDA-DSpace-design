@@ -52,7 +52,7 @@
               <?php include "../../inc/browselinguistics.php";  ?>
           </div>
           <div class="col-md-4">
-            <h3 class="facets">In this Collection</h3>
+            <h3 class="facets">In this Community</h3>
             <div id="facets" class="facetsBox  ">
               <?php include "../../inc/facets_collection.php";  ?>
                 <div id="facet_author" class="facet ">

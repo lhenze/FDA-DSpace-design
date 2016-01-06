@@ -1,9 +1,9 @@
 <div id="facet_author" class="facet ">
 
-   <span class="facetName">Collections in this community</span>
+   <span class="facetName">Collections</span>
   <ul class="list-group">
     <li class="list-group-item ">
-    <a href="/jspui/handle/2451/29947">Field Methods Fall 2011 - Kazakh</a>
+    <a href="/ux/fda/handle/2451/29947.php">Field Methods Fall 2011 - Kazakh</a>
     </li>
     <li class="list-group-item ">
    <a href="/jspui/handle/2451/29676">Field Methods Spring 2005 - Kabiye</a>

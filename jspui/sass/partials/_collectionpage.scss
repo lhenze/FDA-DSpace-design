@@ -2,11 +2,15 @@
   padding-bottom: 30px;
 }
 
+.browse_range {
+  font-size: 1.1em;
+}
+
 .facet {
   a {
     padding: 10px 15px;
-    &:link {
-      color: black;
+    &:link, &:visited {
+      color: $text-color;
       display: block;
     }
     &:hover {

@@ -55,7 +55,7 @@
             </div>
             <div class="row">
               <div class="col-md-8">
-                <div class="panel panel-primary">
+                <div class="panel panel-simple-search">
                   <div class="panel-heading">Search within this collection:</div>
                   <div class="panel-body">
                     <form method="get" action="/jspui/simple-search" class="simplest-search">
@@ -306,17 +306,7 @@
                 </div>
               </div>
             </div>
-            <div class="panel">
-              <div class="panel-heading">Subscribe</div>
-              <div class="panel-body">
-                <p> <small>
-                  Subscribe to this collection to receive daily e-mail notification of new additions.
-                </small></p>
-                <form method="get" action="">
-                  <input class="btn btn-primary" type="submit" name="submit_subscribe" value="Subscribe" />
-                </form>
-              </div>
-            </div>
+           <?php include "../../inc/panel-subscribe.php";  ?>
           </div>
         </div>
       </div>

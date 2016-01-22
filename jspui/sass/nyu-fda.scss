@@ -14,6 +14,7 @@ $taupe-header: darken($taupe-dark, 15%);
 $text-color2: darken($taupe-dark, 25%);
 $text-color: darken($taupe-dark, 31%);
 $taupe-super-light: #F6F5F4;
+$cyan: #0077a2;
 
 @import "partials/_pagelayout";
 @import "partials/_panels";
@@ -42,7 +43,7 @@ html {
 
 a:link,
 a:visited {
-  color: $link-red;
+  color: $cyan;
 }
 
 .btn-primary {

@@ -38,8 +38,17 @@
 .table tbody > tr > td,
 .table tfoot > tr > td {
   padding-left: 0px;
+  text-align: left;
 }
 
-table .t1 {
+.table td:first-child {
   padding-right: 25px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table td:nth-child(2) {
+  padding-right: 25px;
+  text-align: left;
+  width: 40%;
 }

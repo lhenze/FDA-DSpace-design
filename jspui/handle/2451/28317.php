@@ -47,11 +47,11 @@
           <p class="collectionDescription">This is thus.</p>
         </header>
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-9">
             <?php include "../../inc/searchcommunity.php";  ?>
               <?php include "../../inc/browselinguistics.php";  ?>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <h3 class="facets">In this Community</h3>
             <div id="facets" class="facetsBox  ">
               <?php include "../../inc/facets_collection.php";  ?>

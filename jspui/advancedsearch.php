@@ -96,7 +96,7 @@
     <main id="content" role="main">
       <?php include "inc/containerbanner.php";  ?>
         <div class="container">
-          <ol class="breadcrumb btn-success">
+          <ol class="breadcrumb">
             <li><a href="index.php">Faculty Digital Archive</a></li>
           </ol>
         </div>
@@ -309,81 +309,79 @@
                 </div>
               </div>
               <div class="discovery-result-results">
-                <div class="panel panel-info">
-                  <!--    <div class="panel-heading">Item hits:</div> -->
-                  <table align="center" class="table" summary="This table browses all dspace content">
-                    <colgroup>
-                      <col width="130" />
-                      <col width="60%" />
-                      <col width="40%" />
-                    </colgroup>
-                    <tr>
-                      <th id="t1" class="oddRowEvenCol">Issue Date</th>
-                      <th id="t2" class="oddRowOddCol">Title</th>
-                      <th id="t3" class="oddRowEvenCol">Author(s)</th>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">20-Aug-2010</td>
-                      <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29761">2007-06-27</a></td>
-                      <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">20-Aug-2010</td>
-                      <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29762">2007-06-28</a></td>
-                      <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">10-Nov-2010</td>
-                      <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29857">N|uu&#x20;Stories</a></td>
-                      <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">20-Aug-2010</td>
-                      <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29763">2007-06-29</a></td>
-                      <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
-                      <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29692">2004-05-18</a></td>
-                      <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
-                      <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29695">2004-05-21</a></td>
-                      <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
-                      <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29693">2004-05-19</a></td>
-                      <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
-                      <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29694">2004-05-20</a></td>
-                      <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
-                      <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29696">2004-05-24</a></td>
-                      <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
-                    </tr>
-                    <tr>
-                      <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
-                      <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29708">2004-06-07</a></td>
-                      <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
-                    </tr>
-                  </table>
-                  <ul class="pagination pull-right">
-                    <li class="disabled"><span>previous</span></li>
-                    <li class="active"><span>1</span></li>
-                    <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">2</a></li>
-                    <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=20">3</a></li>
-                    <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=30">4</a></li>
-                    <li class="disabled"><span>...</span></li>
-                    <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=70">8</a></li>
-                    <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">next</a></li>
-                  </ul>
-                </div>
+                <!--    <div class="panel-heading">Item hits:</div> -->
+                <table align="center" class="table" summary="This table browses all dspace content">
+                  <colgroup>
+                    <col width="130" />
+                    <col width="60%" />
+                    <col width="40%" />
+                  </colgroup>
+                  <tr>
+                    <th id="t1" class="oddRowEvenCol">Issue Date</th>
+                    <th id="t2" class="oddRowOddCol">Title</th>
+                    <th id="t3" class="oddRowEvenCol">Author(s)</th>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">20-Aug-2010</td>
+                    <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29761">2007-06-27</a></td>
+                    <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">20-Aug-2010</td>
+                    <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29762">2007-06-28</a></td>
+                    <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">10-Nov-2010</td>
+                    <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29857">N|uu&#x20;Stories</a></td>
+                    <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">20-Aug-2010</td>
+                    <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29763">2007-06-29</a></td>
+                    <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
+                    <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29692">2004-05-18</a></td>
+                    <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
+                    <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29695">2004-05-21</a></td>
+                    <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
+                    <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29693">2004-05-19</a></td>
+                    <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
+                    <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29694">2004-05-20</a></td>
+                    <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="evenRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
+                    <td headers="t2" class="evenRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29696">2004-05-24</a></td>
+                    <td headers="t3" class="evenRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
+                  </tr>
+                  <tr>
+                    <td headers="t1" class="oddRowEvenCol" nowrap="nowrap" align="right">19-Aug-2010</td>
+                    <td headers="t2" class="oddRowOddCol"><a href="http://msdlib.home.nyu.edu/jspui/handle/2451/29708">2004-06-07</a></td>
+                    <td headers="t3" class="oddRowEvenCol"><em><a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Collins%2C+Chris">Collins,&#x20;Chris</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=Namaseb%2C+Levi">Namaseb,&#x20;Levi</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a>; <a href="http://msdlib.home.nyu.edu/jspui/browse?type=author&amp;value=x">x</a></em></td>
+                  </tr>
+                </table>
+                <ul class="pagination pull-right">
+                  <li class="disabled"><span>previous</span></li>
+                  <li class="active"><span>1</span></li>
+                  <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">2</a></li>
+                  <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=20">3</a></li>
+                  <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=30">4</a></li>
+                  <li class="disabled"><span>...</span></li>
+                  <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=70">8</a></li>
+                  <li><a href="http://msdlib.home.nyu.edu/jspui/simple-search?query=&amp;filter_field_1=author&amp;filter_type_1=equals&amp;filter_value_1=Collins%2C+Chris&amp;sort_by=score&amp;order=desc&amp;rpp=10&amp;etal=0&amp;start=10">next</a></li>
+                </ul>
               </div>
             </div>
             <div class="col-md-3">

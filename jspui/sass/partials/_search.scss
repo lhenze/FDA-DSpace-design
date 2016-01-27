@@ -1,3 +1,8 @@
+$button-dark-color: #4F0787;
+$button-light-color: #955CE1;
+$button-dark-color: #A49483;
+$button-light-color: #8A7D6E;
+
 .form-group-flex {
   display: flex;
   -webkit-flex-flow: row nowrap;
@@ -44,10 +49,10 @@
     display: block;
     -webkit-flex: 0 0 auto;
     flex: 0 0 auto;
-    background-image: -webkit-gradient(linear, left 0, left 100%, from(#A49483), to(#8A7D6E));
-    background-image: -webkit-linear-gradient(top, #A49483, 0%, #8A7D6E, 100%);
-    background-image: -moz-linear-gradient(top, #A49483 0, #8A7D6E 100%);
-    background-image: linear-gradient(to bottom, #A49483 0, #8A7D6E 100%);
+    background-image: -webkit-gradient(linear, left 0, left 100%, from($button-light-color), to($button-dark-color));
+    background-image: -webkit-linear-gradient(top, $button-light-color, 0%, $button-dark-color, 100%);
+    background-image: -moz-linear-gradient(top, $button-light-color 0, $button-dark-color 100%);
+    background-image: linear-gradient(to bottom, $button-light-color 0, $button-dark-color 100%);
     background-repeat: repeat-x;
     /* border-radius: 4px;*/
     border-top-right-radius: 4px;
@@ -77,6 +82,9 @@
       text-decoration: underline;
       display: inline-block;
     }
+  }
+  label {
+    margin-bottom: 0;
   }
   .discovery-query.open {
     padding: 15px 15px 0;
